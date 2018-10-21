@@ -1,0 +1,1321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0782092B-E3A3-4F48-A464-758B3019EDB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LawyerApp.My.MyApplication</StartupObject>
+    <RootNamespace>LawyerApp</RootNamespace>
+    <AssemblyName>LawyerApp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>E1FA63B07D7B47C44183AF98726830D8BBB68545</ManifestCertificateThumbprint>
+    <ManifestKeyFile>LawyerApp_5_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <ApplicationIcon>swan32.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>f:\lawyer\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>5.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BehComponents">
+      <HintPath>..\Dependencies\BehComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Visual Basic Power Packs\1.1\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.2.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BaseForm\frmDatabaseMove.Designer.vb">
+      <DependentUpon>frmDatabaseMove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\frmDatabaseMove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\frmPostPone.Designer.vb">
+      <DependentUpon>frmPostPone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\frmPostPone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\frmSmsConfig.Designer.vb">
+      <DependentUpon>frmSmsConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\frmSmsConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\NewShowCurTask.Designer.vb">
+      <DependentUpon>NewShowCurTask.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\NewShowCurTask.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\dadMessageBox.Designer.vb">
+      <DependentUpon>dadMessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\dadMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\frmEmail.Designer.vb">
+      <DependentUpon>frmEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\frmEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\frmRestoreBackup.Designer.vb">
+      <DependentUpon>frmRestoreBackup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\frmRestoreBackup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\frmWinExplorer.Designer.vb">
+      <DependentUpon>frmWinExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\frmWinExplorer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\ImageAdd.Designer.vb">
+      <DependentUpon>ImageAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\ImageAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\InfoDadMessageBox.Designer.vb">
+      <DependentUpon>InfoDadMessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\InfoDadMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\MailSetting.Designer.vb">
+      <DependentUpon>MailSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\MailSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\SetConnectionString.Designer.vb">
+      <DependentUpon>SetConnectionString.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\SetConnectionString.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\ShowCurTask.Designer.vb">
+      <DependentUpon>ShowCurTask.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\ShowCurTask.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books\BookAdd.Designer.vb">
+      <DependentUpon>BookAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Books\BookAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books\BookSearch.Designer.vb">
+      <DependentUpon>BookSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Books\BookSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books\BookView.Designer.vb">
+      <DependentUpon>BookView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Books\BookView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books\CaseAdd.Designer.vb">
+      <DependentUpon>CaseAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Books\CaseAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="common\frmSms.Designer.vb">
+      <DependentUpon>frmSms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="common\frmSms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="common\LawyerSetting.vb" />
+    <Compile Include="Competency\CompetencySearch.Designer.vb">
+      <DependentUpon>CompetencySearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Competency\CompetencySearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Competency\CompetencyAdd.Designer.vb">
+      <DependentUpon>CompetencyAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Competency\CompetencyAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Competency\CompetencyMap.Designer.vb">
+      <DependentUpon>CompetencyMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Competency\CompetencyMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Competency\Address.Designer.vb">
+      <DependentUpon>Address.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Competency\Address.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Competency\AddressAdd.Designer.vb">
+      <DependentUpon>AddressAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Competency\AddressAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact\ContactAdd.Designer.vb">
+      <DependentUpon>ContactAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contact\ContactAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact\ContactSearch.Designer.vb">
+      <DependentUpon>ContactSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contact\ContactSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docs\AddFileCase.Designer.vb">
+      <DependentUpon>AddFileCase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\AddFileCase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docs\BraowsDocs.Designer.vb">
+      <DependentUpon>BraowsDocs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\BraowsDocs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docs\BrowseFiles.Designer.vb">
+      <DependentUpon>BrowseFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\BrowseFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docs\frmTempDocsDetail.Designer.vb">
+      <DependentUpon>frmTempDocsDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\frmTempDocsDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\frmOfficeFinanceAdd.Designer.vb">
+      <DependentUpon>frmOfficeFinanceAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\frmOfficeFinanceAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\frmNewFinanceSearch.Designer.vb">
+      <DependentUpon>frmNewFinanceSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\frmNewFinanceSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\frmNewFinanceAdd.Designer.vb">
+      <DependentUpon>frmNewFinanceAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\frmNewFinanceAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\FinanceView.Designer.vb">
+      <DependentUpon>FinanceView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\FinanceView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDesktop.Designer.vb">
+      <DependentUpon>frmDesktop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDesktop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LawyerTools\BloodMoney\BloodMoney.Designer.vb">
+      <DependentUpon>BloodMoney.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LawyerTools\BloodMoney\BloodMoney.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LawyerTools\Credit\frmShexes.Designer.vb">
+      <DependentUpon>frmShexes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LawyerTools\Credit\frmShexes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LawyerTools\Judgment\Tarefe.Designer.vb">
+      <DependentUpon>Tarefe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LawyerTools\Judgment\Tarefe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LawyerTools\LawyerSFees\LawyerSFees.Designer.vb">
+      <DependentUpon>LawyerSFees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LawyerTools\LawyerSFees\LawyerSFees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LawyerTools\Map\frmMap.Designer.vb">
+      <DependentUpon>frmMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LawyerTools\Map\frmMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPage\GlobalForm3.Designer.vb">
+      <DependentUpon>GlobalForm3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\GlobalForm3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PareGooSplash.Designer.vb">
+      <DependentUpon>PareGooSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PareGooSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportsFix.Designer.vb">
+      <DependentUpon>ReportsFix.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportsFix.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\rpt_DataSet.Designer.vb">
+      <DependentUpon>rpt_DataSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rpt_DataSet.vb">
+      <DependentUpon>rpt_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SupportForm.Designer.vb">
+      <DependentUpon>SupportForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SupportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPage\GlobalForm2.Designer.vb">
+      <DependentUpon>GlobalForm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\GlobalForm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPage\GlobalForm.Designer.vb">
+      <DependentUpon>GlobalForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\GlobalForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaseForm\frmDatabaseMove.resx">
+      <DependentUpon>frmDatabaseMove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\frmSmsConfig.resx">
+      <DependentUpon>frmSmsConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="common\frmSms.resx">
+      <DependentUpon>frmSms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LawyerTools\Judgment\Tarefe.resx">
+      <DependentUpon>Tarefe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterPage\GlobalForm3.resx">
+      <DependentUpon>GlobalForm3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PareGooSplash.resx">
+      <DependentUpon>PareGooSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Reports.vb">
+      <SubType>Form</SubType>
+    </EmbeddedResource>
+    <Compile Include="Timing\frmNewTimingAdd.Designer.vb">
+      <DependentUpon>frmNewTimingAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Timing\frmNewTimingAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timing\MoshavereView.Designer.vb">
+      <DependentUpon>MoshavereView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Timing\MoshavereView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timing\TimingView.Designer.vb">
+      <DependentUpon>TimingView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Timing\TimingView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timing\frmNewTimingSearch.Designer.vb">
+      <DependentUpon>frmNewTimingSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Timing\frmNewTimingSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timing\frmMoshavere.Designer.vb">
+      <DependentUpon>frmMoshavere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Timing\frmMoshavere.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timing\KartablView.Designer.vb">
+      <DependentUpon>KartablView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Timing\KartablView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LawyerTools\Credit\Credit.Designer.vb">
+      <DependentUpon>Credit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LawyerTools\Credit\Credit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LawyerTools\Guilts\GuiltSearch.Designer.vb">
+      <DependentUpon>GuiltSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LawyerTools\Guilts\GuiltSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseForm\frmPostPone.resx">
+      <DependentUpon>frmPostPone.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\NewShowCurTask.resx">
+      <DependentUpon>NewShowCurTask.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\dadMessageBox.resx">
+      <DependentUpon>dadMessageBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\frmEmail.resx">
+      <DependentUpon>frmEmail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\frmRestoreBackup.resx">
+      <DependentUpon>frmRestoreBackup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\frmWinExplorer.resx">
+      <DependentUpon>frmWinExplorer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\ImageAdd.resx">
+      <DependentUpon>ImageAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\InfoDadMessageBox.resx">
+      <DependentUpon>InfoDadMessageBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\MailSetting.resx">
+      <DependentUpon>MailSetting.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\SetConnectionString.resx">
+      <DependentUpon>SetConnectionString.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\ShowCurTask.resx">
+      <DependentUpon>ShowCurTask.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\BookAdd.resx">
+      <DependentUpon>BookAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\BookSearch.resx">
+      <DependentUpon>BookSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\BookView.resx">
+      <DependentUpon>BookView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\CaseAdd.resx">
+      <DependentUpon>CaseAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\FinanceView.resx">
+      <DependentUpon>FinanceView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LawyerTools\Credit\frmShexes.resx">
+      <DependentUpon>frmShexes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CaseDocuments.rdlc" />
+    <EmbeddedResource Include="Reports\Daramad.rdlc" />
+    <EmbeddedResource Include="Reports\fixActions.rdlc" />
+    <EmbeddedResource Include="Reports\fixActionsNumberLess.rdlc" />
+    <EmbeddedResource Include="Reports\fixClericalSpending.rdlc" />
+    <EmbeddedResource Include="Reports\fixConsulting.rdlc" />
+    <EmbeddedResource Include="Reports\fixConsulting_Lawyer.rdlc" />
+    <EmbeddedResource Include="Reports\fixHazine.rdlc" />
+    <EmbeddedResource Include="Reports\fixHazineOfOneCase.rdlc" />
+    <EmbeddedResource Include="Reports\fixHazine_D.rdlc" />
+    <EmbeddedResource Include="Reports\fixHazine_H.rdlc" />
+    <EmbeddedResource Include="Reports\Hazine.rdlc" />
+    <EmbeddedResource Include="Reports\Incoming.rdlc" />
+    <EmbeddedResource Include="Reports\LahAleyh.rdlc" />
+    <EmbeddedResource Include="Reports\Moshaver2Garardad.rdlc" />
+    <EmbeddedResource Include="Reports\OragNo.rdlc" />
+    <EmbeddedResource Include="Reports\PersonCases.rdlc" />
+    <EmbeddedResource Include="Reports\ReportsFix.resx">
+      <DependentUpon>ReportsFix.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Subject.rdlc" />
+    <EmbeddedResource Include="SupportForm.resx">
+      <DependentUpon>SupportForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\frmOfficeFinanceAdd.resx">
+      <DependentUpon>frmOfficeFinanceAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\frmNewFinanceSearch.resx">
+      <DependentUpon>frmNewFinanceSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\frmNewFinanceAdd.resx">
+      <DependentUpon>frmNewFinanceAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Competency\CompetencySearch.resx">
+      <DependentUpon>CompetencySearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Competency\CompetencyAdd.resx">
+      <DependentUpon>CompetencyAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Competency\CompetencyMap.resx">
+      <DependentUpon>CompetencyMap.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Competency\Address.resx">
+      <DependentUpon>Address.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Competency\AddressAdd.resx">
+      <DependentUpon>AddressAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\ContactAdd.resx">
+      <DependentUpon>ContactAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\ContactSearch.resx">
+      <DependentUpon>ContactSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\frmTempDocsDetail.resx">
+      <DependentUpon>frmTempDocsDetail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDesktop.resx">
+      <DependentUpon>frmDesktop.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LawyerTools\Map\frmMap.resx">
+      <DependentUpon>frmMap.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterPage\GlobalForm2.resx">
+      <DependentUpon>GlobalForm2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\AddFileCase.resx">
+      <DependentUpon>AddFileCase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\BraowsDocs.resx">
+      <DependentUpon>BraowsDocs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\BrowseFiles.resx">
+      <DependentUpon>BrowseFiles.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LawyerTools\BloodMoney\BloodMoney.resx">
+      <DependentUpon>BloodMoney.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LawyerTools\LawyerSFees\LawyerSFees.resx">
+      <DependentUpon>LawyerSFees.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterPage\GlobalForm.resx">
+      <DependentUpon>GlobalForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timing\frmNewTimingAdd.resx">
+      <DependentUpon>frmNewTimingAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timing\MoshavereView.resx">
+      <DependentUpon>MoshavereView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timing\TimingView.resx">
+      <DependentUpon>TimingView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timing\frmNewTimingSearch.resx">
+      <DependentUpon>frmNewTimingSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timing\frmMoshavere.resx">
+      <DependentUpon>frmMoshavere.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timing\KartablView.resx">
+      <DependentUpon>KartablView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LawyerTools\Credit\Credit.resx">
+      <DependentUpon>Credit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LawyerTools\Guilts\GuiltSearch.resx">
+      <DependentUpon>GuiltSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tarefe.pdf" />
+    <None Include="LawyerApp_1_TemporaryKey.pfx" />
+    <None Include="LawyerApp_3_TemporaryKey.pfx" />
+    <None Include="LawyerApp_4_TemporaryKey.pfx" />
+    <None Include="LawyerApp_5_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Lawyer.Common.VB.Timing.TimingFullSearch.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\paregoo.html" />
+    <Content Include="bin\Debug\paregoo.jpg" />
+    <Content Include="paregoo.html" />
+    <Content Include="paregoo.jpg" />
+    <Content Include="swan32.ico" />
+    <None Include="app.config" />
+    <None Include="ConfigFiles\Default.config" />
+    <None Include="LawyerApp_2_TemporaryKey.pfx" />
+    <None Include="LawyerApp_TemporaryKey.pfx" />
+    <None Include="My Project\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Reports\rpt_DataSet.xsc">
+      <DependentUpon>rpt_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\rpt_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\rpt_DataSet.xss">
+      <DependentUpon>rpt_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\bgDiagnosis.gif" />
+    <None Include="Resources\download_sl_bg_bottom.jpg" />
+    <None Include="Resources\hh.png" />
+    <None Include="Resources\ball_red.png" />
+    <None Include="Resources\header_text_bg.jpg" />
+    <None Include="Resources\bg_body.gif" />
+    <None Include="Resources\m_head_blend.png" />
+    <None Include="Resources\bg_msdn.png" />
+    <None Include="Resources\bg_main.png" />
+    <None Include="Resources\btnmin.png" />
+    <Content Include="DocsIcons\Directory.png" />
+    <Content Include="DocsIcons\doc.gif" />
+    <Content Include="DocsIcons\docx.jpg" />
+    <Content Include="DocsIcons\txt.gif" />
+    <None Include="Resources\RecycleBinFull3.png" />
+    <None Include="Resources\HSCursor.bmp" />
+    <None Include="Resources\Cursor.cur" />
+    <None Include="Resources\Row2-none.png" />
+    <None Include="Resources\Row2.png" />
+    <None Include="Resources\text-x-boo-Color.png" />
+    <None Include="Resources\text-x-boo-Gray.png" />
+    <None Include="Resources\Book.png" />
+    <None Include="Resources\Book.gif" />
+    <None Include="Resources\BookBlue.png" />
+    <None Include="Resources\BookBlue_Gray.png" />
+    <None Include="Resources\MyBook2-Gray.png" />
+    <None Include="Resources\MyBook2.png" />
+    <None Include="Resources\BookCaseLogo.png" />
+    <None Include="Resources\BookCase_Color.png" />
+    <None Include="Resources\BookCase_Gray.png" />
+    <None Include="Resources\Sun.png" />
+    <None Include="Resources\Sun_Gray.png" />
+    <None Include="Resources\Money-Black.png" />
+    <None Include="Resources\money-Ok.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\dead.png" />
+    <None Include="Resources\Woman.png" />
+    <None Include="Resources\Money.png" />
+    <None Include="Resources\Money_Calc.png" />
+    <None Include="Resources\Money_sentenced.png" />
+    <None Include="Resources\Money_Result.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\calendar-Gray.png" />
+    <None Include="Resources\forward.png" />
+    <None Include="Resources\reply.png" />
+    <None Include="Resources\No_calendar.png" />
+    <None Include="Resources\ear24.png" />
+    <None Include="Resources\eye24.png" />
+    <None Include="Resources\Task.bmp" />
+    <None Include="Resources\1tik.png" />
+    <None Include="Resources\woman24.png" />
+    <None Include="Resources\man24.png" />
+    <None Include="Resources\Camel24h.png" />
+    <None Include="Resources\cattle24h.png" />
+    <None Include="Resources\sheep24h.png" />
+    <None Include="Resources\woman24_.png" />
+    <None Include="Resources\man24_.png" />
+    <None Include="Resources\Tick_circle_frame.png" />
+    <None Include="Resources\Cancel_round.png" />
+    <None Include="Resources\bullet-blue-alt2.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\Fax.png" />
+    <None Include="Resources\Del.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\Email.png" />
+    <None Include="Resources\Favorite.png" />
+    <None Include="Resources\openIcon.png" />
+    <None Include="Resources\SaveIcon.png" />
+    <None Include="Resources\Save20All.png" />
+    <None Include="Resources\PrinterIcon.png" />
+    <None Include="Resources\pdfIcon.png" />
+    <None Include="Resources\acrobat_icon.png" />
+    <None Include="Resources\pdf_icon.png" />
+    <None Include="Resources\back_icon.png" />
+    <None Include="Resources\W04.JPG" />
+    <None Include="Resources\1b.jpg" />
+    <None Include="Resources\1b2.jpg" />
+    <None Include="Resources\6.gif" />
+    <None Include="Resources\3c.jpg" />
+    <None Include="Resources\hap_bg1.gif" />
+    <None Include="Resources\11.JPG" />
+    <None Include="Resources\bgnews03.jpg" />
+    <None Include="Resources\1a.gif" />
+    <None Include="Resources\2a2.gif" />
+    <None Include="Resources\1b1.jpg" />
+    <None Include="Resources\BGMENU.GIF" />
+    <None Include="Resources\bg01.jpg" />
+    <None Include="Resources\vertgrad.gif" />
+    <None Include="Resources\bg1.jpg" />
+    <None Include="Resources\bottom.jpg" />
+    <None Include="Resources\INDEX_29.GIF" />
+    <None Include="Resources\temp3_26.gif" />
+    <None Include="Resources\top.jpg" />
+    <None Include="Resources\bg_body1.gif" />
+    <None Include="Resources\main_bg.gif" />
+    <None Include="Resources\1b3.jpg" />
+    <None Include="Resources\2b.jpg" />
+    <None Include="Resources\left.jpg" />
+    <None Include="Resources\sub_slogan1.jpg" />
+    <None Include="Resources\bg_header.gif" />
+    <None Include="Resources\CAP01.JPG" />
+    <None Include="Resources\1a1.gif" />
+    <None Include="Resources\09.JPG" />
+    <None Include="Resources\LATEST_1.GIF" />
+    <None Include="Resources\1a2.gif" />
+    <None Include="Resources\top1.jpg" />
+    <None Include="Resources\bg_sidebar_separator.gif" />
+    <None Include="Resources\bg_footer_gradient.jpg" />
+    <None Include="Resources\top01.gif" />
+    <None Include="Resources\q5.gif" />
+    <None Include="Resources\date.gif" />
+    <None Include="Resources\b2.gif" />
+    <None Include="Resources\b1.gif" />
+    <None Include="Resources\footer.gif" />
+    <None Include="Resources\BGSUB.JPG" />
+    <None Include="Resources\L4.GIF" />
+    <None Include="Resources\2a.jpg" />
+    <None Include="Resources\1289037971_Close_Box_Red.png" />
+    <None Include="Resources\bg.jpg" />
+    <None Include="Resources\backgroundbluelight.gif" />
+    <None Include="Resources\index-body-bg.jpg" />
+    <None Include="Resources\bg_middle_top.jpg" />
+    <None Include="Resources\content-header-gradient.jpg" />
+    <None Include="Resources\grad.png" />
+    <None Include="Resources\header_text_bg1.jpg" />
+    <None Include="Resources\bg_site.jpg" />
+    <None Include="Resources\top_bg.jpg" />
+    <None Include="Resources\big_picture.jpg" />
+    <None Include="Resources\content_bg.jpg" />
+    <None Include="Resources\bottom_bg.jpg" />
+    <None Include="Resources\slogan.gif" />
+    <None Include="Resources\CloseForm.png" />
+    <None Include="Resources\CloseForm1.png" />
+    <None Include="Resources\top02.gif" />
+    <None Include="Resources\topbg02.gif" />
+    <None Include="Resources\top03.gif" />
+    <None Include="Resources\but01.gif" />
+    <None Include="Resources\but02.gif" />
+    <None Include="Resources\but031.gif" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\Minimize.png" />
+    <None Include="Resources\but04.gif" />
+    <None Include="Resources\but05.gif" />
+    <None Include="Resources\bottom01.gif" />
+    <None Include="Resources\bottombg.gif" />
+    <None Include="Resources\Mail_icon.png" />
+    <None Include="Resources\Hardware_Fax.png" />
+    <None Include="Resources\User.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Search5.png" />
+    <None Include="Resources\bg.gif" />
+    <None Include="Resources\closeForm2.png" />
+    <None Include="Resources\Switch.png" />
+    <None Include="Resources\User-icon.png" />
+    <None Include="Resources\UserAdd.png" />
+    <None Include="Resources\pill_shaped_002.gif" />
+    <None Include="Resources\Addfile.png" />
+    <None Include="Resources\Deletefile.png" />
+    <None Include="Resources\Mailsend.png" />
+    <None Include="Resources\fax1.png" />
+    <None Include="Resources\fax11.png" />
+    <None Include="Resources\Recycle_Full.png" />
+    <None Include="Resources\TrashFull.png" />
+    <None Include="Resources\edit1.png" />
+    <None Include="Resources\edit11.png" />
+    <None Include="Resources\Addfile2.png" />
+    <None Include="Resources\Addfile1.png" />
+    <None Include="Resources\YellowBook.png" />
+    <None Include="Resources\WhiteBook.png" />
+    <None Include="Resources\shelfAdd.png" />
+    <None Include="Resources\shelfAdd2.png" />
+    <None Include="Resources\Attach.png" />
+    <None Include="Resources\Attachfile.png" />
+    <None Include="Resources\latest.gif" />
+    <None Include="Resources\green_bottom.gif" />
+    <None Include="Resources\hap_bg11.gif" />
+    <None Include="Resources\happening1.gif" />
+    <None Include="Resources\more1.gif" />
+    <None Include="Resources\happening11.gif" />
+    <None Include="Resources\more3.gif" />
+    <None Include="Resources\more2.gif" />
+    <None Include="Resources\happening12.png" />
+    <None Include="Resources\latest.jpg" />
+    <None Include="Resources\latest_l.jpg" />
+    <None Include="Resources\contactus.gif" />
+    <None Include="Resources\welcomebg.gif" />
+    <None Include="Resources\bottom_corner.gif" />
+    <None Include="Resources\whitebg.gif" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\print16.png" />
+    <None Include="Resources\remove_business_user.png" />
+    <None Include="Resources\remove_male_user.png" />
+    <None Include="Resources\remove_male_user1.png" />
+    <None Include="Resources\1291617235_user-blue-delete1.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\print_Green.png" />
+    <None Include="Resources\Save_all.png" />
+    <None Include="Resources\folderopen.png" />
+    <None Include="Resources\pdf.png" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\arrow_D.png" />
+    <None Include="Resources\arrow_T.png" />
+    <None Include="Resources\arrow_L.png" />
+    <None Include="Resources\arrow_R.png" />
+    <None Include="Resources\rounded-square.png" />
+    <None Include="Resources\rounded-square16.png" />
+    <None Include="Resources\maximize-grey-thin.png" />
+    <None Include="Resources\pnlHeader.png" />
+    <None Include="Resources\header.png" />
+    <None Include="Resources\icon_resize.gif" />
+    <None Include="Resources\ResizeIcon.png" />
+    <None Include="Resources\banner.png" />
+    <None Include="Resources\bottonLogo.png" />
+    <None Include="Resources\content.png" />
+    <None Include="Resources\content3.png" />
+    <None Include="Resources\content4.png" />
+    <None Include="Resources\content5.png" />
+    <None Include="Resources\1210668408.jpg" />
+    <None Include="Resources\desktopImage.jpg" />
+    <None Include="Resources\blue-banner.png" />
+    <None Include="Resources\A-BANNER_BLUE_-_2-1252x423.jpg" />
+    <None Include="Resources\Blue_Banner.jpg" />
+    <None Include="Resources\b1.png" />
+    <None Include="Resources\b2.jpg" />
+    <None Include="Resources\b3.jpg" />
+    <None Include="Resources\b4.jpg" />
+    <None Include="Resources\b5.jpg" />
+    <None Include="Resources\b6.png" />
+    <None Include="Resources\b7.jpg" />
+    <None Include="Resources\b8.png" />
+    <None Include="Resources\b9.jpg" />
+    <None Include="Resources\10_64x64.png" />
+    <None Include="Resources\10_48x48.png" />
+    <None Include="Resources\36_48x48.png" />
+    <None Include="Resources\02_48x48.png" />
+    <None Include="Resources\02_32x32.png" />
+    <None Include="Resources\target.png" />
+    <None Include="Resources\o_attachment.png" />
+    <None Include="Resources\EmptyPng.png" />
+    <None Include="Resources\filter_add.gif" />
+    <None Include="Resources\filter_del.gif" />
+    <None Include="Resources\filter.gif" />
+    <None Include="Resources\tree.png" />
+    <None Include="Resources\DelLaw.png" />
+    <None Include="Resources\EditCat.png" />
+    <None Include="Resources\folder_add.png" />
+    <None Include="Resources\DeleteCat.png" />
+    <None Include="Resources\AddKey.png" />
+    <None Include="Resources\MinusKey.png" />
+    <None Include="Resources\CloseKey.png" />
+    <None Include="Resources\KeyWord.png" />
+    <None Include="Resources\Untitled240.png" />
+    <None Include="Resources\gbanner3.jpg" />
+    <None Include="Resources\519_24.png" />
+    <None Include="Resources\alarm284.png" />
+    <None Include="Resources\news24.png" />
+    <None Include="Resources\Messageicon28.png" />
+    <None Include="Resources\exit16.png" />
+    <None Include="Resources\Attach_16.bmp" />
+    <None Include="Resources\attachment_icon_16.png" />
+    <None Include="Resources\at_16.png" />
+    <None Include="Resources\printerWeb.png" />
+    <None Include="Resources\Newspaper.png" />
+    <None Include="Resources\myComputer16.png" />
+    <None Include="Resources\myComputer20.png" />
+    <None Include="Resources\erro18_1.png" />
+    <None Include="Resources\tick_icon.png" />
+    <None Include="Resources\ok16_2.png" />
+    <None Include="Resources\WarrantsIcon32.png" />
+    <None Include="Resources\Whack-MS-Word-icon40.png" />
+    <None Include="Resources\Accounting40.png" />
+    <None Include="Resources\bg2.gif" />
+    <None Include="Resources\law-icon40.png" />
+    <None Include="Resources\minus2.png" />
+    <None Include="Resources\desk.png" />
+    <None Include="Resources\collapse7.png" />
+    <None Include="Resources\extract16.png" />
+    <None Include="Resources\collapse6.png" />
+    <None Include="Resources\colapse16.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\searchCAF2PYCI24.png" />
+    <None Include="Resources\_5.png" />
+    <None Include="Resources\519_20.png" />
+    <None Include="Resources\alarm20.png" />
+    <None Include="Resources\news20.png" />
+    <None Include="Resources\_519_24.png" />
+    <None Include="Resources\Messageicon24.png" />
+    <None Include="Resources\LawSet.png" />
+    <None Include="Resources\tick_icon12.png" />
+    <None Include="Resources\ok16_12.png" />
+    <None Include="Resources\HelpIcon.gif" />
+    <None Include="Resources\HelpIcon.png" />
+    <None Include="Resources\helpIcon2.png" />
+    <None Include="Resources\HelpIcon3.png" />
+    <None Include="Resources\book_add32.png" />
+    <None Include="Resources\reply32.png" />
+    <None Include="Resources\forward32.png" />
+    <None Include="Resources\Go.png" />
+    <None Include="Resources\Go20.png" />
+    <None Include="Resources\Favorite16.png" />
+    <None Include="Resources\FinanceAdd.png" />
+    <None Include="Resources\row-color.png" />
+    <None Include="Resources\row-gray.png" />
+    <None Include="Resources\background22.png" />
+    <None Include="Resources\contact20.png" />
+    <None Include="Resources\exit16_.png" />
+    <None Include="Resources\Minimize_.png" />
+    <None Include="Resources\closeForm2_.png" />
+    <None Include="Resources\ResizeIcon_.png" />
+    <None Include="Resources\connect3.png" />
+    <None Include="Resources\connect2.png" />
+    <None Include="Resources\Search1.png" />
+    <None Include="Resources\info18.png" />
+    <None Include="Resources\Save12.png" />
+    <None Include="Resources\TestCon16.png" />
+    <None Include="Resources\TestCon2.png" />
+    <None Include="Resources\Menu.png" />
+    <None Include="Resources\Untitled-2.png" />
+    <None Include="Resources\colapse16_12.png" />
+    <None Include="Resources\collapse7_12.png" />
+    <None Include="Resources\bullet-blue-alt21.png" />
+    <None Include="Resources\map32.png" />
+    <None Include="Resources\BrawsDocs.ico" />
+    <None Include="Resources\connect1.png" />
+    <None Include="Resources\connect4.png" />
+    <None Include="Resources\connect_h.png" />
+    <None Include="Resources\connect.png" />
+    <None Include="Resources\Setting_h.png" />
+    <None Include="Resources\Setting.png" />
+    <None Include="Resources\installData.png" />
+    <None Include="Resources\Run2.png" />
+    <None Include="Resources\ManualConfig2.png" />
+    <None Include="Resources\AutoConfig3.png" />
+    <None Include="Resources\refresh2.png" />
+    <None Include="Resources\Search11.png" />
+    <None Include="Resources\alarm.ico" />
+    <None Include="Resources\AddTiming.ico" />
+    <None Include="Resources\LoginButton.jpg" />
+    <None Include="Resources\LoginButton2.png" />
+    <None Include="Resources\login3.png" />
+    <None Include="Resources\downloading2.gif" />
+    <None Include="Resources\play2.png" />
+    <None Include="Resources\Run16.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\restart16.png" />
+    <None Include="Resources\restartLater16.png" />
+    <None Include="Resources\Update.png" />
+    <None Include="Resources\Update2.png" />
+    <None Include="Resources\Update300.png" />
+    <None Include="Resources\desktopImage2.jpg" />
+    <None Include="Resources\desktopImage3.jpg" />
+    <None Include="Resources\gbanner4.jpg" />
+    <None Include="Resources\court32.png" />
+    <None Include="Resources\address32.png" />
+    <None Include="Resources\Abacus32.ico" />
+    <None Include="Resources\Traffic.png" />
+    <None Include="Resources\adress38.png" />
+    <None Include="Resources\jorm38.png" />
+    <None Include="Resources\MapIcon38.gif" />
+    <None Include="Resources\gbanner41.jpg" />
+    <None Include="Resources\adress40.png" />
+    <None Include="Resources\jorm40.png" />
+    <None Include="Resources\MapIcon38.png" />
+    <None Include="Resources\reportError.png" />
+    <None Include="Resources\reportError2.png" />
+    <None Include="Resources\noInstalData24.png" />
+    <None Include="Resources\InstallData24.png" />
+    <None Include="Resources\Ie-icon.png" />
+    <None Include="Resources\DisableSoft.png" />
+    <None Include="Resources\DisableSoft_h.png" />
+    <Content Include="Help\Ashkhas.wmv" />
+    <Content Include="Help\AsnadTip.wmv" />
+    <Content Include="Help\Egdamat.wmv" />
+    <Content Include="Help\Hazine.wmv" />
+    <Content Include="Help\Parvandeh.wmv" />
+    <Content Include="Help\Poshtibangiri.wmv" />
+    <Content Include="icon_.ico" />
+    <None Include="Resources\Law_update.png" />
+    <None Include="Resources\payane16.png" />
+    <None Include="Resources\desk1.png" />
+    <None Include="Resources\Desktop4.png" />
+    <None Include="Resources\52.png" />
+    <None Include="Resources\Maximize.png" />
+    <None Include="Resources\Dictionary40.png" />
+    <None Include="Resources\maximizeLaw.png" />
+    <None Include="Resources\minimizeLaw.png" />
+    <None Include="Resources\expand.png" />
+    <None Include="Resources\collpase.png" />
+    <None Include="Resources\sendFileCase.png" />
+    <None Include="Resources\sendFileCase_h.png" />
+    <None Include="Resources\sms.png" />
+    <None Include="Resources\sms_h.png" />
+    <None Include="Resources\talk.png" />
+    <None Include="Resources\talk_h.png" />
+    <None Include="Resources\vakilSearch.png" />
+    <None Include="Resources\vakilSearch_h.png" />
+    <None Include="Resources\dAYERE.png" />
+    <None Include="Resources\20_32x40.png" />
+    <None Include="Resources\fax_icon32.png" />
+    <None Include="Resources\Sent-Mail32.png" />
+    <None Include="Resources\20_32x32.png" />
+    <None Include="Resources\Accounting32.png" />
+    <None Include="Resources\adress32.png" />
+    <None Include="Resources\dictionary.png" />
+    <None Include="Resources\jorm32.png" />
+    <None Include="Resources\law-icon32.png" />
+    <None Include="Resources\MapIcon32.gif" />
+    <None Include="Resources\Whack-MS-Word-icon32.png" />
+    <None Include="Resources\Sent-Mail40.png" />
+    <None Include="Resources\fax_icon40.png" />
+    <None Include="Resources\cheque.png" />
+    <None Include="Resources\Excel20.png" />
+    <None Include="Resources\Excel201.png" />
+    <None Include="Resources\23_32x32.png" />
+    <None Include="Resources\23_32x40.png" />
+    <None Include="Resources\archive-32.png" />
+    <None Include="Resources\archive-40.png" />
+    <None Include="Resources\backup64.png" />
+    <None Include="Resources\backup64_h.png" />
+    <None Include="Resources\Column-Chart-icon32.png" />
+    <None Include="Resources\Column-Chart-icon40.png" />
+    <None Include="Resources\ContactSearch32.png" />
+    <None Include="Resources\ContactSearch40.png" />
+    <None Include="Resources\date-32.png" />
+    <None Include="Resources\date-40.png" />
+    <None Include="Resources\Developer32.png" />
+    <None Include="Resources\Developer40.png" />
+    <None Include="Resources\folders32.png" />
+    <None Include="Resources\folders40.png" />
+    <None Include="Resources\icon_large32.png" />
+    <None Include="Resources\mi9-library-icon32.png" />
+    <None Include="Resources\mi9-library-icon40.png" />
+    <None Include="Resources\update4.png" />
+    <None Include="Resources\update4_h.png" />
+    <None Include="Resources\icon_large40.png" />
+    <None Include="Resources\Consulting-h.png" />
+    <None Include="Resources\ClericalSpending.png" />
+    <None Include="Resources\ClericalSpending_h.png" />
+    <None Include="Resources\Consulting.png" />
+    <None Include="Resources\SaveAndClose.png" />
+    <None Include="Resources\pill_shaped_0022.gif" />
+    <None Include="Resources\Search12.png" />
+    <Content Include="icon.ico" />
+    <Content Include="Resource\bgDiagnosis.gif" />
+    <Content Include="Resource\bg_body.gif" />
+    <Content Include="Resource\SettingFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bmPics\" />
+    <Folder Include="Contact\Picture\" />
+    <Folder Include="Docs\Files\" />
+    <Folder Include="Docs\Icons\" />
+    <Folder Include="Icons\" />
+    <Folder Include="Timing\Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HS Library\HS\HS_V\HS_V.vbproj">
+      <Project>{5347ddb4-8531-4ee5-98bc-f88ca0f31107}</Project>
+      <Name>HS_V</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controls\Lawyer.Common.Default\Lawyer.Common.Default.vbproj">
+      <Project>{d2adc21f-3359-4c1c-a0e9-aad1b1f17fc6}</Project>
+      <Name>Lawyer.Common.Default</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controls\LawyerCommonControlsCS\LawyerCommonControlsCS.csproj">
+      <Project>{de36b3ea-329b-4a52-897b-f260cf1d4b80}</Project>
+      <Name>LawyerCommonControlsCS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controls\WFControls.CS\WFControls.CS.csproj">
+      <Project>{3ae6f031-1bc8-4e22-9b77-96928d4c769b}</Project>
+      <Name>WFControls.CS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controls\WFControls.VB\WFControls.VB.vbproj">
+      <Project>{fc31d0b9-ce7a-4d95-b3cb-5354c0eef1a8}</Project>
+      <Name>WFControls.VB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DbAccessLayer\DbAccessLayer.csproj">
+      <Project>{bac2485c-8e68-4ceb-840f-96cd1ce06dcc}</Project>
+      <Name>DbAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeneralUtilities\GeneralUtilities.vbproj">
+      <Project>{a499c719-5112-4c86-a086-e99d9bb2c103}</Project>
+      <Name>GeneralUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LawyerCommonControls\LawyerCommonControls.vbproj">
+      <Project>{e9e407d4-168d-4422-b204-841bee8d373a}</Project>
+      <Name>LawyerCommonControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Lawyer.Coding\Lawyer.Coding.vbproj">
+      <Project>{c82927b3-2eda-4857-a20f-5d5a318475f6}</Project>
+      <Name>Lawyer.Coding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Lawyer.Common.CS\Lawyer.Common.CS.csproj">
+      <Project>{7ca3f533-5299-4118-bccc-d7ab4de1d69e}</Project>
+      <Name>Lawyer.Common.CS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Lawyer.Common.VB\Lawyer.Common.VB.vbproj">
+      <Project>{b93cf7fa-5b57-4128-bb97-8bfc40235052}</Project>
+      <Name>Lawyer.Common.VB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

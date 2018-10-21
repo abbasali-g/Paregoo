@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D98A7333-B4AB-4EF4-A383-001E13F8B3B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Lawyer.Partial</RootNamespace>
+    <AssemblyName>Lawyer.Partial</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Lawyer.Partial.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Lawyer.Partial.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm\ContactSearch.designer.vb">
+      <DependentUpon>ContactSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\ContactSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\frmEmail.designer.vb">
+      <DependentUpon>frmEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\frmEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\GlobalForm.designer.vb">
+      <DependentUpon>GlobalForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\GlobalForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\GlobalForm2.Designer.vb">
+      <DependentUpon>GlobalForm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\GlobalForm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\InfoDadMessageBox.designer.vb">
+      <DependentUpon>InfoDadMessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\InfoDadMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\MailSetting.designer.vb">
+      <DependentUpon>MailSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\MailSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ucDesktop.Designer.vb">
+      <DependentUpon>ucDesktop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucDesktop.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseForm\ContactSearch.resx">
+      <DependentUpon>ContactSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\frmEmail.resx">
+      <DependentUpon>frmEmail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\GlobalForm.resx">
+      <DependentUpon>GlobalForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\GlobalForm2.resx">
+      <DependentUpon>GlobalForm2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\InfoDadMessageBox.resx">
+      <DependentUpon>InfoDadMessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\MailSetting.resx">
+      <DependentUpon>MailSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDesktop.resx">
+      <DependentUpon>ucDesktop.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talk_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update4_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vakilSearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vakilSearch_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backup64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backup64_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sendFileCase_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sendFileCase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeForm2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportError2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LawyerApp\LawyerApp.vbproj">
+      <Project>{0782092B-E3A3-4F48-A464-758B3019EDB4}</Project>
+      <Name>LawyerApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Lawyer.Common.VB\Lawyer.Common.VB.vbproj">
+      <Project>{B93CF7FA-5B57-4128-BB97-8BFC40235052}</Project>
+      <Name>Lawyer.Common.VB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WFControls.VB\WFControls.VB.vbproj">
+      <Project>{FC31D0B9-CE7A-4D95-B3CB-5354C0EEF1A8}</Project>
+      <Name>WFControls.VB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeForm2_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok16_12.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

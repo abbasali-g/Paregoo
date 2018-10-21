@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3AE6F031-1BC8-4E22-9B77-96928D4C769B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WFControls.CS</RootNamespace>
+    <AssemblyName>WFControls.CS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>DtecLock.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Office, Version=2.1.0.0, Culture=neutral, PublicKeyToken=43d8cf3dc64a75c5, processorArchitecture=MSIL" />
+    <Reference Include="Interop.VBIDE, Version=5.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Word, Version=8.1.0.0, Culture=neutral, PublicKeyToken=43d8cf3dc64a75c5, processorArchitecture=MSIL" />
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\Visual Basic Power Packs\1.1\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.2.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseUc\frmPropertyMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseUc\frmPropertyMsg.Designer.cs">
+      <DependentUpon>frmPropertyMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseUc\MsgBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseUc\MsgBox.designer.cs">
+      <DependentUpon>MsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book\PropertyMsg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Book\PropertyMsg.Designer.cs">
+      <DependentUpon>PropertyMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book\NewsTooltip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Book\NewsTooltip.Designer.cs">
+      <DependentUpon>NewsTooltip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book\TooltipBookCase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Book\TooltipBookCase.Designer.cs">
+      <DependentUpon>TooltipBookCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\ServerStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Config\ServerStatus.designer.cs">
+      <DependentUpon>ServerStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveDatabase\ucMoveDatabase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MoveDatabase\ucMoveDatabase.Designer.cs">
+      <DependentUpon>ucMoveDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResoreBackUp\BackRestore.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResoreBackUp\BackRestore.Designer.cs">
+      <DependentUpon>BackRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shaxes\ucShaxes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shaxes\ucShaxes.Designer.cs">
+      <DependentUpon>ucShaxes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sms\ucSms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sms\ucSms.Designer.cs">
+      <DependentUpon>ucSms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sms\ucSmsConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sms\ucSmsConfig.Designer.cs">
+      <DependentUpon>ucSmsConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransparencyPanel\TransparencyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransparencyPanel\DrawingArea.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Book\TooltipGridC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Book\TooltipGridC.Designer.cs">
+      <DependentUpon>TooltipGridC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseUc\frmPropertyMsg.resx">
+      <DependentUpon>frmPropertyMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseUc\MsgBox.resx">
+      <DependentUpon>MsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book\PropertyMsg.resx">
+      <DependentUpon>PropertyMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book\NewsTooltip.resx">
+      <DependentUpon>NewsTooltip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book\TooltipBookCase.resx">
+      <DependentUpon>TooltipBookCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\ServerStatus.resx">
+      <DependentUpon>ServerStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveDatabase\ucMoveDatabase.resx">
+      <DependentUpon>ucMoveDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book\TooltipGridC.resx">
+      <DependentUpon>TooltipGridC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResoreBackUp\BackRestore.resx">
+      <DependentUpon>BackRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shaxes\ucShaxes.resx">
+      <DependentUpon>ucShaxes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sms\ucSms.resx">
+      <DependentUpon>ucSms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sms\ucSmsConfig.resx">
+      <DependentUpon>ucSmsConfig.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBox8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Lawyer.Common.CS\Lawyer.Common.CS.csproj">
+      <Project>{7CA3F533-5299-4118-BCCC-D7AB4DE1D69E}</Project>
+      <Name>Lawyer.Common.CS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Lawyer.Common.VB\Lawyer.Common.VB.vbproj">
+      <Project>{B93CF7FA-5B57-4128-BB97-8BFC40235052}</Project>
+      <Name>Lawyer.Common.VB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok16_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erro18_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InstallData24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noConnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noInstalData24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nosignal24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nosignal24_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Signal24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestCon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoConfig3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browse2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DtecLock.snk" />
+    <None Include="Resources\ok16_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

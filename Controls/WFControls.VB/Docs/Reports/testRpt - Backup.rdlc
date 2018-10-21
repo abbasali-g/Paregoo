@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="nwdicdad2ConnectionString">
+      <rd:DataSourceID>cad5b615-f20f-44f7-85fd-c8730d1c8e2e</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+    <DataSource Name="ID127_0_0_1_nwdicdad2_">
+      <rd:DataSourceID>54396f49-249d-456d-ac68-925b081f4ff8</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>password=@@%!mysqlnahani;port=9918;server=127.0.0.1;User Id=root;database=nwdicdad2</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>0.8cm</RightMargin>
+  <LeftMargin>0.8cm</LeftMargin>
+  <BottomMargin>1cm</BottomMargin>
+  <rd:ReportID>f07b0ba9-0f93-4f8e-985f-024e93fd129c</rd:ReportID>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="DataSet1_testRpt">
+      <Fields>
+        <Field Name="timetext">
+          <DataField>timetext</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="timedate">
+          <DataField>timedate</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="timetitle">
+          <DataField>timetitle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="vakil">
+          <DataField>vakil</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="moshavereName">
+          <DataField>moshavereName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="financeamount">
+          <DataField>financeamount</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>ID127_0_0_1_nwdicdad2_</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>`nwdicdad2`.`testRpt`</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet1</rd:DataSetName>
+        <rd:TableName>testRpt</rd:TableName>
+        <rd:TableAdapterName>testRptTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>21cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Rectangle Name="rectangle1">
+        <Left>1.75cm</Left>
+        <ZIndex>2</ZIndex>
+        <ReportItems>
+          <Textbox Name="textbox4">
+            <Top>4.75cm</Top>
+            <Width>12.75cm</Width>
+            <Style>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>13pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>30</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.5cm</Left>
+            <Height>0.75cm</Height>
+            <Value>=FormatNumber(Fields!financeamount.Value, 0,false,false,true)</Value>
+          </Textbox>
+          <Textbox Name="textbox3">
+            <Top>4.75cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>29</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13.75cm</Left>
+            <Height>0.66746cm</Height>
+            <Value>مبلغ مشاوره:</Value>
+          </Textbox>
+          <Line Name="line16">
+            <Top>24.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Dotted</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>28</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line15">
+            <Top>23.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Dotted</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>27</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line14">
+            <Top>22.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Dotted</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>26</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line13">
+            <Top>21.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Dotted</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>25</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line12">
+            <Top>20.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Dotted</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>24</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line11">
+            <Top>19.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Dotted</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>23</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line10">
+            <Top>18.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Dotted</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>22</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line9">
+            <Top>17.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Dotted</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>21</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line8">
+            <Top>16.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Dotted</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>20</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line7">
+            <Top>12.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Dotted</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>19</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line6">
+            <Top>15.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Dotted</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>18</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line5">
+            <Top>14.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Dotted</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>17</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line4">
+            <Top>13.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Dotted</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>16</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line3">
+            <Top>3.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>15</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line2">
+            <Top>5.75cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>14</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line1">
+            <Top>11cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>13</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="timedate">
+            <rd:DefaultName>timedate</rd:DefaultName>
+            <Top>0.75cm</Top>
+            <Width>3cm</Width>
+            <Style>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>13pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>12</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!timedate.Value.ToString().Substring(0,4)&amp;"/" &amp;Fields!timedate.Value.ToString().Substring(4,2) &amp; "/" &amp; Fields!timedate.Value.ToString().Substring(6,2))</Value>
+          </Textbox>
+          <Textbox Name="textbox20">
+            <Top>2cm</Top>
+            <Width>3.5cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>11</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value> مشاوره گیرنده :</Value>
+          </Textbox>
+          <Textbox Name="textbox2">
+            <rd:DefaultName>textbox2</rd:DefaultName>
+            <Top>2cm</Top>
+            <Width>3.78968cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>11.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value />
+          </Textbox>
+          <Textbox Name="textbox15">
+            <Top>2cm</Top>
+            <Width>1.25cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>9</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>15.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>ردیف :</Value>
+          </Textbox>
+          <Textbox Name="vakil">
+            <rd:DefaultName>vakil</rd:DefaultName>
+            <Top>0.75cm</Top>
+            <Width>6.5cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!vakil.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox17">
+            <Top>0.75cm</Top>
+            <Width>1.25cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.2cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>وکیل :</Value>
+          </Textbox>
+          <Textbox Name="moshavereName">
+            <rd:DefaultName>moshavereName</rd:DefaultName>
+            <Top>2cm</Top>
+            <Width>6cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!moshavereName.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox9">
+            <Top>0.75cm</Top>
+            <Width>1.25cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <Left>15.4cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>تاریخ :</Value>
+          </Textbox>
+          <Textbox Name="timetitle">
+            <rd:DefaultName>timetitle</rd:DefaultName>
+            <Top>3.75cm</Top>
+            <Width>12.75cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.5cm</Left>
+            <Height>0.75cm</Height>
+            <Value>=First(Fields!timetitle.Value)</Value>
+          </Textbox>
+          <Textbox Name="timetext">
+            <rd:DefaultName>timetext</rd:DefaultName>
+            <Top>6.75cm</Top>
+            <Width>16.5cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>4cm</Height>
+            <Value>=First(Fields!timetext.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox24">
+            <Top>5.75cm</Top>
+            <Width>1.25cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>15.25cm</Left>
+            <Height>0.66746cm</Height>
+            <Value>شرح :</Value>
+          </Textbox>
+          <Textbox Name="textbox22">
+            <Top>3.75cm</Top>
+            <Width>2.75cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13.75cm</Left>
+            <Height>0.66746cm</Height>
+            <Value>موضوع مشاوره:</Value>
+          </Textbox>
+          <Textbox Name="textbox26">
+            <Top>11.25cm</Top>
+            <Width>2.53969cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>14.25cm</Left>
+            <Height>0.5cm</Height>
+            <Value>اقدامات : </Value>
+          </Textbox>
+        </ReportItems>
+        <Top>2.25cm</Top>
+        <Width>17cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Double</Default>
+          </BorderStyle>
+          <BorderWidth>
+            <Default>4pt</Default>
+          </BorderWidth>
+        </Style>
+        <Height>25.5cm</Height>
+      </Rectangle>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>0.25cm</Top>
+        <Width>3.75cm</Width>
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>14pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>8.625cm</Left>
+        <Height>0.75cm</Height>
+        <Value>فرم مشاوره</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Top>1.75cm</Top>
+        <Width>1.5cm</Width>
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>7pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>1.75cm</Left>
+        <Height>0.5cm</Height>
+        <Value>(پرقو)</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>29.7cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

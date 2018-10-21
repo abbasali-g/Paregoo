@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="nwdicdad2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="nwdicdad2ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WFControls.VB.My.MySettings.GlobalReference.Default.nwdicdad2ConnectionString" Provider="MySql.Data.MySqlClient" />
+          <Connection ConnectionStringObject="password=@@%!mysqlnahani;port=9918;server=127.0.0.1;User Id=root;database=nwdicdad2" IsAppSettingsProperty="false" Modifier="Assembly" Name="127.0.0.1(nwdicdad2)" ParameterPrefix="@" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="testRpt2TableAdapter" GeneratorDataComponentClassName="testRpt2TableAdapter" Name="testRpt2" UserDataComponentName="testRpt2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwdicdad2ConnectionString (MySettings)" DbObjectName="``.`nwdicdad2`.`testRpt2`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`testRpt2`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="fileCaseNumberInSystem" DataSetColumn="fileCaseNumberInSystem" />
+              <Mapping SourceColumn="fileCaseNumberInCourt" DataSetColumn="fileCaseNumberInCourt" />
+              <Mapping SourceColumn="fileCaseNumberInBranch" DataSetColumn="fileCaseNumberInBranch" />
+              <Mapping SourceColumn="fileCaseOpenDate" DataSetColumn="fileCaseOpenDate" />
+              <Mapping SourceColumn="fileCaseCloseDate" DataSetColumn="fileCaseCloseDate" />
+              <Mapping SourceColumn="fileCaseComplainantText" DataSetColumn="fileCaseComplainantText" />
+              <Mapping SourceColumn="fileCaseCatText" DataSetColumn="fileCaseCatText" />
+              <Mapping SourceColumn="fileCaseTypeText" DataSetColumn="fileCaseTypeText" />
+              <Mapping SourceColumn="StatusText" DataSetColumn="StatusText" />
+              <Mapping SourceColumn="filecaseResultDetailText" DataSetColumn="filecaseResultDetailText" />
+              <Mapping SourceColumn="fileCaseSubject" DataSetColumn="fileCaseSubject" />
+              <Mapping SourceColumn="fileCaseStepText" DataSetColumn="fileCaseStepText" />
+              <Mapping SourceColumn="fileCaseDescription" DataSetColumn="fileCaseDescription" />
+              <Mapping SourceColumn="fileCaseAreaText" DataSetColumn="fileCaseAreaText" />
+              <Mapping SourceColumn="fileCaseOtherDescription" DataSetColumn="fileCaseOtherDescription" />
+              <Mapping SourceColumn="DecryptedFileCasePass" DataSetColumn="DecryptedFileCasePass" />
+              <Mapping SourceColumn="fileCaseCloseDateText" DataSetColumn="fileCaseCloseDateText" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="stp_rptTimingTableAdapter" GeneratorDataComponentClassName="stp_rptTimingTableAdapter" Name="stp_rptTiming" UserDataComponentName="stp_rptTimingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwdicdad2ConnectionString (MySettings)" DbObjectName="``.`nwdicdad2`.`stp_rptTiming`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`stp_rptTiming`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="timeTitle" DataSetColumn="timeTitle" />
+              <Mapping SourceColumn="timeText" DataSetColumn="timeText" />
+              <Mapping SourceColumn="timeFullDate" DataSetColumn="timeFullDate" />
+              <Mapping SourceColumn="timeTypeName" DataSetColumn="timeTypeName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="testRptTableAdapter" GeneratorDataComponentClassName="testRptTableAdapter" Name="testRpt" UserDataComponentName="testRptTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="127.0.0.1(nwdicdad2)" DbObjectName="``.`nwdicdad2`.`testRpt`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`testRpt`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="timetext" DataSetColumn="timetext" />
+              <Mapping SourceColumn="timedate" DataSetColumn="timedate" />
+              <Mapping SourceColumn="timetitle" DataSetColumn="timetitle" />
+              <Mapping SourceColumn="vakil" DataSetColumn="vakil" />
+              <Mapping SourceColumn="moshavereName" DataSetColumn="moshavereName" />
+              <Mapping SourceColumn="financeamount" DataSetColumn="financeamount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="testRpt2" msprop:Generator_UserTableName="testRpt2" msprop:Generator_RowDeletedName="testRpt2RowDeleted" msprop:Generator_RowChangedName="testRpt2RowChanged" msprop:Generator_RowClassName="testRpt2Row" msprop:Generator_RowChangingName="testRpt2RowChanging" msprop:Generator_RowEvArgName="testRpt2RowChangeEvent" msprop:Generator_RowEvHandlerName="testRpt2RowChangeEventHandler" msprop:Generator_TableClassName="testRpt2DataTable" msprop:Generator_TableVarName="tabletestRpt2" msprop:Generator_RowDeletingName="testRpt2RowDeleting" msprop:Generator_TablePropName="testRpt2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fileCaseNumberInSystem" msprop:Generator_UserColumnName="fileCaseNumberInSystem" msprop:Generator_ColumnPropNameInRow="fileCaseNumberInSystem" msprop:Generator_ColumnVarNameInTable="columnfileCaseNumberInSystem" msprop:Generator_ColumnPropNameInTable="fileCaseNumberInSystemColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseNumberInCourt" msprop:Generator_UserColumnName="fileCaseNumberInCourt" msprop:Generator_ColumnPropNameInRow="fileCaseNumberInCourt" msprop:Generator_ColumnVarNameInTable="columnfileCaseNumberInCourt" msprop:Generator_ColumnPropNameInTable="fileCaseNumberInCourtColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseNumberInBranch" msprop:Generator_UserColumnName="fileCaseNumberInBranch" msprop:Generator_ColumnPropNameInRow="fileCaseNumberInBranch" msprop:Generator_ColumnVarNameInTable="columnfileCaseNumberInBranch" msprop:Generator_ColumnPropNameInTable="fileCaseNumberInBranchColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseOpenDate" msprop:Generator_UserColumnName="fileCaseOpenDate" msprop:Generator_ColumnPropNameInRow="fileCaseOpenDate" msprop:Generator_ColumnVarNameInTable="columnfileCaseOpenDate" msprop:Generator_ColumnPropNameInTable="fileCaseOpenDateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="fileCaseCloseDate" msprop:Generator_UserColumnName="fileCaseCloseDate" msprop:Generator_ColumnPropNameInRow="fileCaseCloseDate" msprop:Generator_ColumnVarNameInTable="columnfileCaseCloseDate" msprop:Generator_ColumnPropNameInTable="fileCaseCloseDateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="fileCaseComplainantText" msprop:Generator_UserColumnName="fileCaseComplainantText" msprop:Generator_ColumnPropNameInRow="fileCaseComplainantText" msprop:Generator_ColumnVarNameInTable="columnfileCaseComplainantText" msprop:Generator_ColumnPropNameInTable="fileCaseComplainantTextColumn" type="xs:string" />
+              <xs:element name="fileCaseCatText" msprop:Generator_UserColumnName="fileCaseCatText" msprop:Generator_ColumnPropNameInRow="fileCaseCatText" msprop:Generator_ColumnVarNameInTable="columnfileCaseCatText" msprop:Generator_ColumnPropNameInTable="fileCaseCatTextColumn" type="xs:string" />
+              <xs:element name="fileCaseTypeText" msprop:Generator_UserColumnName="fileCaseTypeText" msprop:Generator_ColumnPropNameInRow="fileCaseTypeText" msprop:Generator_ColumnVarNameInTable="columnfileCaseTypeText" msprop:Generator_ColumnPropNameInTable="fileCaseTypeTextColumn" type="xs:string" />
+              <xs:element name="StatusText" msprop:Generator_UserColumnName="StatusText" msprop:Generator_ColumnPropNameInRow="StatusText" msprop:Generator_ColumnVarNameInTable="columnStatusText" msprop:Generator_ColumnPropNameInTable="StatusTextColumn" type="xs:string" />
+              <xs:element name="filecaseResultDetailText" msprop:Generator_UserColumnName="filecaseResultDetailText" msprop:Generator_ColumnPropNameInRow="filecaseResultDetailText" msprop:Generator_ColumnVarNameInTable="columnfilecaseResultDetailText" msprop:Generator_ColumnPropNameInTable="filecaseResultDetailTextColumn" type="xs:string" />
+              <xs:element name="fileCaseSubject" msprop:Generator_UserColumnName="fileCaseSubject" msprop:Generator_ColumnPropNameInRow="fileCaseSubject" msprop:Generator_ColumnVarNameInTable="columnfileCaseSubject" msprop:Generator_ColumnPropNameInTable="fileCaseSubjectColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseStepText" msprop:Generator_UserColumnName="fileCaseStepText" msprop:Generator_ColumnPropNameInRow="fileCaseStepText" msprop:Generator_ColumnVarNameInTable="columnfileCaseStepText" msprop:Generator_ColumnPropNameInTable="fileCaseStepTextColumn" type="xs:string" />
+              <xs:element name="fileCaseDescription" msprop:Generator_UserColumnName="fileCaseDescription" msprop:Generator_ColumnPropNameInRow="fileCaseDescription" msprop:Generator_ColumnVarNameInTable="columnfileCaseDescription" msprop:Generator_ColumnPropNameInTable="fileCaseDescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseAreaText" msprop:Generator_UserColumnName="fileCaseAreaText" msprop:Generator_ColumnPropNameInRow="fileCaseAreaText" msprop:Generator_ColumnVarNameInTable="columnfileCaseAreaText" msprop:Generator_ColumnPropNameInTable="fileCaseAreaTextColumn" type="xs:string" />
+              <xs:element name="fileCaseOtherDescription" msprop:Generator_UserColumnName="fileCaseOtherDescription" msprop:Generator_ColumnPropNameInRow="fileCaseOtherDescription" msprop:Generator_ColumnVarNameInTable="columnfileCaseOtherDescription" msprop:Generator_ColumnPropNameInTable="fileCaseOtherDescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5592405" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DecryptedFileCasePass" msprop:Generator_UserColumnName="DecryptedFileCasePass" msprop:Generator_ColumnPropNameInRow="DecryptedFileCasePass" msprop:Generator_ColumnVarNameInTable="columnDecryptedFileCasePass" msprop:Generator_ColumnPropNameInTable="DecryptedFileCasePassColumn" type="xs:string" />
+              <xs:element name="fileCaseCloseDateText" msprop:Generator_UserColumnName="fileCaseCloseDateText" msprop:Generator_ColumnPropNameInRow="fileCaseCloseDateText" msprop:Generator_ColumnVarNameInTable="columnfileCaseCloseDateText" msprop:Generator_ColumnPropNameInTable="fileCaseCloseDateTextColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="stp_rptTiming" msprop:Generator_UserTableName="stp_rptTiming" msprop:Generator_RowDeletedName="stp_rptTimingRowDeleted" msprop:Generator_RowChangedName="stp_rptTimingRowChanged" msprop:Generator_RowClassName="stp_rptTimingRow" msprop:Generator_RowChangingName="stp_rptTimingRowChanging" msprop:Generator_RowEvArgName="stp_rptTimingRowChangeEvent" msprop:Generator_RowEvHandlerName="stp_rptTimingRowChangeEventHandler" msprop:Generator_TableClassName="stp_rptTimingDataTable" msprop:Generator_TableVarName="tablestp_rptTiming" msprop:Generator_RowDeletingName="stp_rptTimingRowDeleting" msprop:Generator_TablePropName="stp_rptTiming">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="timeTitle" msprop:Generator_UserColumnName="timeTitle" msprop:Generator_ColumnVarNameInTable="columntimeTitle" msprop:Generator_ColumnPropNameInRow="timeTitle" msprop:Generator_ColumnPropNameInTable="timeTitleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="timeText" msprop:Generator_UserColumnName="timeText" msprop:Generator_ColumnVarNameInTable="columntimeText" msprop:Generator_ColumnPropNameInRow="timeText" msprop:Generator_ColumnPropNameInTable="timeTextColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="timeFullDate" msprop:Generator_UserColumnName="timeFullDate" msprop:Generator_ColumnVarNameInTable="columntimeFullDate" msprop:Generator_ColumnPropNameInRow="timeFullDate" msprop:Generator_ColumnPropNameInTable="timeFullDateColumn" type="xs:string" />
+              <xs:element name="timeTypeName" msprop:Generator_UserColumnName="timeTypeName" msprop:Generator_ColumnVarNameInTable="columntimeTypeName" msprop:Generator_ColumnPropNameInRow="timeTypeName" msprop:Generator_ColumnPropNameInTable="timeTypeNameColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="testRpt" msprop:Generator_UserTableName="testRpt" msprop:Generator_RowDeletedName="testRptRowDeleted" msprop:Generator_TableClassName="testRptDataTable" msprop:Generator_RowChangedName="testRptRowChanged" msprop:Generator_RowClassName="testRptRow" msprop:Generator_RowChangingName="testRptRowChanging" msprop:Generator_RowEvArgName="testRptRowChangeEvent" msprop:Generator_RowEvHandlerName="testRptRowChangeEventHandler" msprop:Generator_TablePropName="testRpt" msprop:Generator_TableVarName="tabletestRpt" msprop:Generator_RowDeletingName="testRptRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="timetext" msprop:Generator_UserColumnName="timetext" msprop:Generator_ColumnPropNameInRow="timetext" msprop:Generator_ColumnVarNameInTable="columntimetext" msprop:Generator_ColumnPropNameInTable="timetextColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="timedate" msprop:Generator_UserColumnName="timedate" msprop:Generator_ColumnPropNameInRow="timedate" msprop:Generator_ColumnVarNameInTable="columntimedate" msprop:Generator_ColumnPropNameInTable="timedateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="timetitle" msprop:Generator_UserColumnName="timetitle" msprop:Generator_ColumnPropNameInRow="timetitle" msprop:Generator_ColumnVarNameInTable="columntimetitle" msprop:Generator_ColumnPropNameInTable="timetitleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vakil" msprop:Generator_UserColumnName="vakil" msprop:Generator_ColumnPropNameInRow="vakil" msprop:Generator_ColumnVarNameInTable="columnvakil" msprop:Generator_ColumnPropNameInTable="vakilColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="moshavereName" msprop:Generator_UserColumnName="moshavereName" msprop:Generator_ColumnPropNameInRow="moshavereName" msprop:Generator_ColumnVarNameInTable="columnmoshavereName" msprop:Generator_ColumnPropNameInTable="moshavereNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="financeamount" msprop:Generator_UserColumnName="financeamount" msprop:Generator_ColumnPropNameInRow="financeamount" msprop:Generator_ColumnVarNameInTable="columnfinanceamount" msprop:Generator_ColumnPropNameInTable="financeamountColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

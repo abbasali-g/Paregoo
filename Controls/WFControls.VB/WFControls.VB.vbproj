@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC31D0B9-CE7A-4D95-B3CB-5354C0EEF1A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WFControls.VB</RootNamespace>
+    <AssemblyName>WFControls.VB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>DtecLock.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\Visual Basic Power Packs\1.1\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.2.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="NetSpell.SpellChecker, Version=2.1.7.41329, Culture=neutral, PublicKeyToken=318b389f0db66e46">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LawyerCommonControlsCS\bin\Debug\NetSpell.SpellChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseControl\AmountControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseControl\ucContacts.Designer.vb">
+      <DependentUpon>ucContacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControl\ucContacts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docs\Reports\NewReport.Designer.vb">
+      <DependentUpon>NewReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\Reports\NewReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docs\Reports\ReportsFix.Designer.vb">
+      <DependentUpon>ReportsFix.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\Reports\ReportsFix.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docs\UcAddTempDocsDetail.Designer.vb">
+      <DependentUpon>UcAddTempDocsDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\UcAddTempDocsDetail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finance\OfficeFinanceAdd.Designer.vb">
+      <DependentUpon>OfficeFinanceAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\OfficeFinanceAdd.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finance\NewFinanceSearch.Designer.vb">
+      <DependentUpon>NewFinanceSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\NewFinanceSearch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finance\NewFinanceAdd.Designer.vb">
+      <DependentUpon>NewFinanceAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\NewFinanceAdd.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComputer\CProcDataObject.vb" />
+    <Compile Include="MyComputer\CShItem.vb" />
+    <Compile Include="MyComputer\ExpTree.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControl\Loading.Designer.vb">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControl\Loading.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControl\Map.Designer.vb">
+      <DependentUpon>Map.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControl\Map.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControl\RmanShamsiDate.designer.vb">
+      <DependentUpon>RmanShamsiDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControl\RmanShamsiDate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Contacts\ContactAdd.Designer.vb">
+      <DependentUpon>ContactAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts\ContactAdd.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Contacts\ContactSearch.Designer.vb">
+      <DependentUpon>ContactSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts\ContactSearch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docs\DocList.Designer.vb">
+      <DependentUpon>DocList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\DocList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docs\FileCase.Designer.vb">
+      <DependentUpon>FileCase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\FileCase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docs\FileList.Designer.vb">
+      <DependentUpon>FileList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\FileList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragAndDropListView.Designer.vb">
+      <DependentUpon>DragAndDropListView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DragAndDropListView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Laws\ucEmail.designer.vb">
+      <DependentUpon>ucEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laws\ucEmail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComputer\ShellDll.vb" />
+    <Compile Include="MyComputer\SystemImageListManager.vb" />
+    <Compile Include="MyComputer\TVDragWrapper.vb" />
+    <Compile Include="Docs\Reports\DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\Reports\GlobalForm2.Designer.vb">
+      <DependentUpon>GlobalForm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\Reports\GlobalForm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scan\TwainDefs.vb" />
+    <Compile Include="Scan\TwainLib.vb" />
+    <Compile Include="Timing\NewTimingSearch.Designer.vb">
+      <DependentUpon>NewTimingSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Timing\NewTimingSearch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Timing\Moshavere.Designer.vb">
+      <DependentUpon>Moshavere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Timing\Moshavere.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Timing\NewTimingAdd.Designer.vb">
+      <DependentUpon>NewTimingAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Timing\NewTimingAdd.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrackBar\HS_TrackBar.designer.vb">
+      <DependentUpon>HS_TrackBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrackBar\HS_TrackBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\HS_RichTextBox.Designer.vb">
+      <DependentUpon>HS_RichTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBox\HS_RichTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LawyerTools\ImageViewer.Designer.vb">
+      <DependentUpon>ImageViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LawyerTools\ImageViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Library\ucBook.Designer.vb">
+      <DependentUpon>ucBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Library\ucBook.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Library\ucBookCase.Designer.vb">
+      <DependentUpon>ucBookCase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Library\ucBookCase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Timing\kartablView.Designer.vb">
+      <DependentUpon>kartablView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Timing\kartablView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBox\RichTextBoxEx.designer.vb">
+      <DependentUpon>RichTextBoxEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBox\RichTextBoxEx.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseControl\AmountControl.resx">
+      <DependentUpon>AmountControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControl\ucContacts.resx">
+      <DependentUpon>ucContacts.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Reports\fileCaseLabel.rdlc" />
+    <EmbeddedResource Include="Docs\Reports\NewReport.resx">
+      <DependentUpon>NewReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Reports\ReportsFix.resx">
+      <DependentUpon>ReportsFix.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\UcAddTempDocsDetail.resx">
+      <DependentUpon>UcAddTempDocsDetail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\OfficeFinanceAdd.resx">
+      <DependentUpon>OfficeFinanceAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\NewFinanceSearch.resx">
+      <DependentUpon>NewFinanceSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\NewFinanceAdd.resx">
+      <DependentUpon>NewFinanceAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComputer\ExpTree.resx">
+      <DependentUpon>ExpTree.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControl\Loading.resx">
+      <DependentUpon>Loading.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControl\Map.resx">
+      <DependentUpon>Map.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControl\RmanShamsiDate.resx">
+      <DependentUpon>RmanShamsiDate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contacts\ContactAdd.resx">
+      <DependentUpon>ContactAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contacts\ContactSearch.resx">
+      <DependentUpon>ContactSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\DocList.resx">
+      <DependentUpon>DocList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\FileCase.resx">
+      <DependentUpon>FileCase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\FileList.resx">
+      <DependentUpon>FileList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragAndDropListView.resx">
+      <DependentUpon>DragAndDropListView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laws\ucEmail.resx">
+      <DependentUpon>ucEmail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Reports\printFilecase.rdlc" />
+    <EmbeddedResource Include="Docs\Reports\testRpt.rdlc" />
+    <EmbeddedResource Include="Docs\Reports\GlobalForm2.resx">
+      <DependentUpon>GlobalForm2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Reports\testRpt2.rdlc" />
+    <EmbeddedResource Include="Timing\NewTimingSearch.resx">
+      <DependentUpon>NewTimingSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timing\Moshavere.resx">
+      <DependentUpon>Moshavere.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timing\NewTimingAdd.resx">
+      <DependentUpon>NewTimingAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrackBar\HS_TrackBar.resx">
+      <DependentUpon>HS_TrackBar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LawyerTools\ImageViewer.resx">
+      <DependentUpon>ImageViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library\ucBook.resx">
+      <DependentUpon>ucBook.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library\ucBookCase.resx">
+      <DependentUpon>ucBookCase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timing\kartablView.resx">
+      <DependentUpon>kartablView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RichTextBox\RichTextBoxEx.resx">
+      <DependentUpon>RichTextBoxEx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBReports\rptContact.rdlc" />
+    <EmbeddedResource Include="VBReports\rptParvandeh.rdlc" />
+    <EmbeddedResource Include="VBReports\rptVakil.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="en-US.dic" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\HS Library\HS\HS_V\HS_V.vbproj">
+      <Project>{5347ddb4-8531-4ee5-98bc-f88ca0f31107}</Project>
+      <Name>HS_V</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{5433bd7a-1fd4-4234-bc22-ce9aff6d5c91}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DbAccessLayer\DbAccessLayer.csproj">
+      <Project>{bac2485c-8e68-4ceb-840f-96cd1ce06dcc}</Project>
+      <Name>DbAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GeneralUtilities\GeneralUtilities.vbproj">
+      <Project>{a499c719-5112-4c86-a086-e99d9bb2c103}</Project>
+      <Name>GeneralUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LawyerCommonControls\LawyerCommonControls.vbproj">
+      <Project>{e9e407d4-168d-4422-b204-841bee8d373a}</Project>
+      <Name>LawyerCommonControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Lawyer.Coding\Lawyer.Coding.vbproj">
+      <Project>{C82927B3-2EDA-4857-A20F-5D5A318475F6}</Project>
+      <Name>Lawyer.Coding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Lawyer.Common.CS\Lawyer.Common.CS.csproj">
+      <Project>{7CA3F533-5299-4118-BCCC-D7AB4DE1D69E}</Project>
+      <Name>Lawyer.Common.CS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Lawyer.Common.VB\Lawyer.Common.VB.vbproj">
+      <Project>{B93CF7FA-5B57-4128-BB97-8BFC40235052}</Project>
+      <Name>Lawyer.Common.VB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WFControls.CS\WFControls.CS.csproj">
+      <Project>{3ae6f031-1bc8-4e22-9b77-96928d4c769b}</Project>
+      <Name>WFControls.CS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txt_icon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gTrackBar.bmp" />
+    <None Include="DtecLock.snk" />
+    <None Include="My Project\DataSources\System.Data.DataTable.datasource" />
+    <None Include="app.config" />
+    <None Include="Resources\scanner-icon.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Docs\Reports\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Docs\Reports\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Include="Docs\Reports\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\ResizeIcon_.png" />
+    <None Include="Resources\closeForm2.png" />
+    <None Include="Resources\CloseForm.png" />
+    <None Include="Resources\closeForm2_.png" />
+    <None Include="Resources\Minimize_.png" />
+    <None Include="Resources\reportError2.png" />
+    <None Include="Resources\bg2.gif" />
+    <None Include="Resources\Minimize.png" />
+    <None Include="Resources\ResizeIcon.png" />
+    <None Include="Resources\Self extraction.png" />
+    <None Include="Resources\office_folders16.png" />
+    <None Include="Resources\Self extraction16.png" />
+    <None Include="Resources\pasteAction2.png" />
+    <None Include="Resources\pasteAction.png" />
+    <None Include="Resources\Cut_icon.gif" />
+    <None Include="Resources\FolderClose1.gif" />
+    <None Include="Resources\folderOpen.png" />
+    <None Include="Resources\FolderClose.gif" />
+    <None Include="Resources\payane16.png" />
+    <None Include="Resources\payane.png" />
+    <None Include="Resources\printerWeb.png" />
+    <None Include="Resources\doc_png24.png" />
+    <None Include="Resources\print_Green.png" />
+    <None Include="Resources\coping.png" />
+    <None Include="Resources\zuncan3.png" />
+    <None Include="Resources\collpase.png" />
+    <None Include="Resources\expand.png" />
+    <None Include="Resources\row-gray.png" />
+    <None Include="Resources\row-color.png" />
+    <None Include="Resources\filter_del.gif" />
+    <None Include="Resources\o_attachment.png" />
+    <None Include="Resources\CreateFileCase.gif" />
+    <None Include="Resources\myComputer161.png" />
+    <None Include="Resources\SetConn.ico" />
+    <None Include="Resources\myComputer16.png" />
+    <None Include="Resources\zuncan.png" />
+    <None Include="Resources\editPhoto.png" />
+    <None Include="Resources\browse2.png" />
+    <None Include="Resources\loading.green.gif" />
+    <None Include="Resources\attachFi.png" />
+    <None Include="Resources\Attachfile.png" />
+    <None Include="Resources\AttachF.png" />
+    <None Include="Resources\ok16_12.png" />
+    <None Include="Resources\tick_icon12.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\contact32.png" />
+    <None Include="Resources\AddCat16.png" />
+    <None Include="Resources\AddCat.png" />
+    <None Include="Resources\DeleteCat.png" />
+    <None Include="Resources\EditCat.png" />
+    <None Include="Resources\HelpIcon3.png" />
+    <None Include="Resources\MinusKey.png" />
+    <None Include="Resources\My Documents32.png" />
+    <None Include="Resources\Folder32_3.png" />
+    <None Include="Resources\back24_6.png" />
+    <None Include="Resources\Folder32_2.png" />
+    <None Include="Resources\Folder32_1.png" />
+    <None Include="Resources\Search32_3.png" />
+    <None Include="Resources\search32_2.png" />
+    <None Include="Resources\search32_1.png" />
+    <None Include="Resources\back24_5.png" />
+    <None Include="Resources\back32_5.png" />
+    <None Include="Resources\back24_4.png" />
+    <None Include="Resources\back24_2.png" />
+    <None Include="Resources\Back24_1.png" />
+    <None Include="Resources\Back32_1.png" />
+    <None Include="Resources\myComputer32.png" />
+    <None Include="Resources\Back_Blue.png" />
+    <None Include="Resources\menubar_Blue.jpg" />
+    <None Include="Resources\menubar_bLACK.jpg" />
+    <None Include="Resources\Back_Gray.png" />
+    <None Include="Resources\Next_Blue.png" />
+    <None Include="Resources\Naxt_Gray.png" />
+    <None Include="Resources\close-yellow.png" />
+    <None Include="Resources\message_icon.png" />
+    <None Include="Resources\bottom_corner.gif" />
+    <None Include="Resources\whitebg1.gif" />
+    <None Include="Resources\welcomebg.gif" />
+    <None Include="Resources\whitebg.gif" />
+    <None Include="Resources\contactus.gif" />
+    <None Include="Resources\welcome.gif" />
+    <None Include="Resources\alarm-bell128.png" />
+    <None Include="Resources\more_info.gif" />
+    <None Include="Resources\light_bulb1.png" />
+    <None Include="Resources\light_bulb.png" />
+    <None Include="Resources\target1.png" />
+    <None Include="Resources\target.png" />
+    <None Include="Resources\office_folders1.png" />
+    <None Include="Resources\office_folders.png" />
+    <None Include="Resources\happening3.gif" />
+    <None Include="Resources\hap_bg1.gif" />
+    <None Include="Resources\showLink.png" />
+    <None Include="Resources\remove_link.png" />
+    <None Include="Resources\add_link.png" />
+    <None Include="Resources\trash_icon.png" />
+    <None Include="Resources\zuncan2.png" />
+    <None Include="Resources\lock3.png" />
+    <None Include="Resources\unlock3.png" />
+    <None Include="Resources\unlock2.png" />
+    <None Include="Resources\Lock2.png" />
+    <None Include="Resources\bullet-white.png" />
+    <None Include="Resources\bullet-green16.png" />
+    <None Include="Resources\bullet-blue-alt2.png" />
+    <None Include="Resources\arrow_prev_xs.png" />
+    <None Include="Resources\Back7.png" />
+    <None Include="Resources\refresh2.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\back6.png" />
+    <None Include="Resources\back5.png" />
+    <None Include="Resources\addFile6.png" />
+    <None Include="Resources\addFile5.png" />
+    <None Include="Resources\addFile4.png" />
+    <None Include="Resources\addFile3.png" />
+    <None Include="Resources\ArrowBack.png" />
+    <None Include="Resources\Back1.png" />
+    <None Include="Resources\Back.png" />
+    <None Include="Resources\AddPic.png" />
+    <None Include="Resources\UserAdd.png" />
+    <None Include="Resources\pill_shaped_002.gif" />
+    <None Include="Resources\NOPIC.jpg" />
+    <None Include="Resources\Search1.png" />
+    <None Include="Resources\users-folder-stripes.png" />
+    <None Include="Resources\Contact.png" />
+    <None Include="Resources\image-add-48.png" />
+    <None Include="Resources\link-4.png" />
+    <None Include="Resources\Refresh_icon.png" />
+    <None Include="Resources\menu1.jpg" />
+    <None Include="Resources\PLAN01.JPG" />
+    <None Include="Resources\1c.jpg" />
+    <None Include="Resources\1b-2.jpg" />
+    <None Include="Resources\1b.jpg" />
+    <None Include="Resources\1a5.jpg" />
+    <None Include="Resources\W04.JPG" />
+    <None Include="Resources\menu.jpg" />
+    <None Include="Resources\1b2.jpg" />
+    <None Include="Resources\main_tp_crv.gif" />
+    <None Include="Resources\main_bt_crv1.gif" />
+    <None Include="Resources\main_bt_crv.gif" />
+    <None Include="Resources\unique_moon.gif" />
+    <None Include="Resources\sky_oval_panel.gif" />
+    <None Include="Resources\bronze_square.gif" />
+    <None Include="Resources\add_folder1.png" />
+    <None Include="Resources\add_folder48.png" />
+    <None Include="Resources\p431_at.jpg" />
+    <None Include="Resources\zooncan.jpg" />
+    <None Include="Resources\Recycle_Full.png" />
+    <None Include="Resources\Recycle_Bin.png" />
+    <None Include="Resources\back_icon.png" />
+    <None Include="Resources\AddFolder1.png" />
+    <None Include="Resources\Back2.png" />
+    <None Include="Resources\add_folder.png" />
+    <None Include="Resources\AddFolder.png" />
+    <None Include="Resources\add-folder1.png" />
+    <None Include="Resources\excel20icon.gif" />
+    <None Include="Resources\Money20Icon.jpg" />
+    <None Include="Resources\PF_Money_Mac_os_x.jpg" />
+    <None Include="Resources\EmptyImage1.png" />
+    <None Include="Resources\EmptyImage.png" />
+    <None Include="Resources\at.png" />
+    <None Include="Resources\attachment1.png" />
+    <None Include="Resources\attachment.png" />
+    <None Include="Resources\B10.png" />
+    <None Include="Resources\B09.png" />
+    <None Include="Resources\B08.png" />
+    <None Include="Resources\B07.png" />
+    <None Include="Resources\B06.png" />
+    <None Include="Resources\B05.png" />
+    <None Include="Resources\B04.png" />
+    <None Include="Resources\B03.png" />
+    <None Include="Resources\B02.png" />
+    <None Include="Resources\B01.png" />
+    <None Include="Resources\1.gif" />
+    <None Include="Resources\noDefaultImage.gif" />
+    <None Include="Resources\daneshamoz.png" />
+    <None Include="Resources\MyBook_Active.png" />
+    <None Include="Resources\download_sl_bg_bottom.jpg" />
+    <None Include="Resources\unlock.jpg" />
+    <None Include="Resources\lock.jpg" />
+    <None Include="Resources\MyBook2.png" />
+    <None Include="Resources\MyBook2-Gray.png" />
+    <None Include="Resources\MyBook_Glow.png" />
+    <None Include="Resources\MyBook.png" />
+    <None Include="Resources\BookCaseLarg.png" />
+    <None Include="Resources\BookCase.jpg" />
+    <None Include="VBReports\VBDataSet.xsc">
+      <DependentUpon>VBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VBReports\VBDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Include="VBReports\VBDataSet.xss">
+      <DependentUpon>VBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

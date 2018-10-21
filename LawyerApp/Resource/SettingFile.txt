@@ -1,0 +1,1 @@
+﻿server=server;uid=root; pwd=1;database=nwdicdad2;

@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rpt_DataSet" targetNamespace="http://tempuri.org/rpt_DataSet.xsd" xmlns:mstns="http://tempuri.org/rpt_DataSet.xsd" xmlns="http://tempuri.org/rpt_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="nwdicdad2ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="nwdicdad2ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LawyerApp.My.MySettings.GlobalReference.Default.nwdicdad2ConnectionString" Provider="MySql.Data.MySqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="nwdicdad2_MainServer" IsAppSettingsProperty="true" Modifier="Assembly" Name="nwdicdad2_MainServer (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LawyerApp.My.MySettings.GlobalReference.Default.nwdicdad2_MainServer" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="stpRptTableAdapter" GeneratorDataComponentClassName="stpRptTableAdapter" Name="stpRpt" UserDataComponentName="stpRptTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwdicdad2ConnectionString (MySettings)" DbObjectName="``.`nwdicdad2`.`stpRpt`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`stpRpt`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="typeResult" DataSetColumn="typeResult" />
+              <Mapping SourceColumn="fileCaseOpenDate" DataSetColumn="fileCaseOpenDate" />
+              <Mapping SourceColumn="status" DataSetColumn="status" />
+              <Mapping SourceColumn="fileCaseNumber" DataSetColumn="fileCaseNumber" />
+              <Mapping SourceColumn="fileCaseSubject" DataSetColumn="fileCaseSubject" />
+              <Mapping SourceColumn="custFullName" DataSetColumn="custFullName" />
+              <Mapping SourceColumn="contactInfoID" DataSetColumn="contactInfoID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="stpRpt2TableAdapter" GeneratorDataComponentClassName="stpRpt2TableAdapter" Name="stpRpt2" UserDataComponentName="stpRpt2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwdicdad2ConnectionString (MySettings)" DbObjectName="``.`nwdicdad2`.`stpRpt2`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`stpRpt2`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="fileCaseOpenDate" DataSetColumn="fileCaseOpenDate" />
+              <Mapping SourceColumn="fileCaseNumber" DataSetColumn="fileCaseNumber" />
+              <Mapping SourceColumn="fileCaseSubject" DataSetColumn="fileCaseSubject" />
+              <Mapping SourceColumn="custFullName" DataSetColumn="custFullName" />
+              <Mapping SourceColumn="contactInfoID" DataSetColumn="contactInfoID" />
+              <Mapping SourceColumn="filecount" DataSetColumn="filecount" />
+              <Mapping SourceColumn="status" DataSetColumn="status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="stpRpt3TableAdapter" GeneratorDataComponentClassName="stpRpt3TableAdapter" Name="stpRpt3" UserDataComponentName="stpRpt3TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwdicdad2ConnectionString (MySettings)" DbObjectName="``.`nwdicdad2`.`stpRpt3`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`stpRpt3`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="fileCaseOpenDate" DataSetColumn="fileCaseOpenDate" />
+              <Mapping SourceColumn="fileCaseNumber" DataSetColumn="fileCaseNumber" />
+              <Mapping SourceColumn="status" DataSetColumn="status" />
+              <Mapping SourceColumn="fileCaseSubject" DataSetColumn="fileCaseSubject" />
+              <Mapping SourceColumn="custFullName" DataSetColumn="custFullName" />
+              <Mapping SourceColumn="contactInfoID" DataSetColumn="contactInfoID" />
+              <Mapping SourceColumn="financeAmount" DataSetColumn="financeAmount" />
+              <Mapping SourceColumn="hazineType" DataSetColumn="hazineType" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rpt_CaseDocumentsTableAdapter" GeneratorDataComponentClassName="rpt_CaseDocumentsTableAdapter" Name="rpt_CaseDocuments" UserDataComponentName="rpt_CaseDocumentsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwdicdad2_MainServer (MySettings)" DbObjectName="``.`nwdicdad2`.`stpDad_rptfiledocsSelByFilecaseIDAndType`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`stpDad_rptfiledocsSelByFilecaseIDAndType`</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="_fileCaseID" Precision="255" ProviderType="String" Scale="255" Size="36" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="_fileType" Precision="10" ProviderType="Int16" Scale="0" Size="2147483647" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="fileFullName" DataSetColumn="fileFullName" />
+              <Mapping SourceColumn="fileDocDate" DataSetColumn="fileDocDate" />
+              <Mapping SourceColumn="fileDocTime" DataSetColumn="fileDocTime" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rpt_HazineTableAdapter" GeneratorDataComponentClassName="rpt_HazineTableAdapter" Name="rpt_Hazine" UserDataComponentName="rpt_HazineTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwdicdad2_MainServer (MySettings)" DbObjectName="``.`nwdicdad2`.`StoredProcedure1`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`StoredProcedure1`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AmountHazine" DataSetColumn="AmountHazine" />
+              <Mapping SourceColumn="AmountDaryaft" DataSetColumn="AmountDaryaft" />
+              <Mapping SourceColumn="financeID" DataSetColumn="financeID" />
+              <Mapping SourceColumn="financeType" DataSetColumn="financeType" />
+              <Mapping SourceColumn="description" DataSetColumn="description" />
+              <Mapping SourceColumn="FileCaseNumber" DataSetColumn="FileCaseNumber" />
+              <Mapping SourceColumn="fileCaseID" DataSetColumn="fileCaseID" />
+              <Mapping SourceColumn="custFullName" DataSetColumn="custFullName" />
+              <Mapping SourceColumn="financeChequeSerial" DataSetColumn="financeChequeSerial" />
+              <Mapping SourceColumn="BranchName" DataSetColumn="BranchName" />
+              <Mapping SourceColumn="financePaymentDate" DataSetColumn="financePaymentDate" />
+              <Mapping SourceColumn="financePaymentTime" DataSetColumn="financePaymentTime" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rpt_FixActionsTableAdapter" GeneratorDataComponentClassName="rpt_FixActionsTableAdapter" Name="rpt_FixActions" UserDataComponentName="rpt_FixActionsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwdicdad2_MainServer (MySettings)" DbObjectName="``.`nwdicdad2`.`Temp_rptFixHazine`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`Temp_rptFixHazine`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="timeID" DataSetColumn="timeID" />
+              <Mapping SourceColumn="tpID" DataSetColumn="tpID" />
+              <Mapping SourceColumn="timeTitle" DataSetColumn="timeTitle" />
+              <Mapping SourceColumn="custFullName" DataSetColumn="custFullName" />
+              <Mapping SourceColumn="timeDate" DataSetColumn="timeDate" />
+              <Mapping SourceColumn="timeActualTime" DataSetColumn="timeActualTime" />
+              <Mapping SourceColumn="timeDone" DataSetColumn="timeDone" />
+              <Mapping SourceColumn="timeTime" DataSetColumn="timeTime" />
+              <Mapping SourceColumn="fileCaseNumber" DataSetColumn="fileCaseNumber" />
+              <Mapping SourceColumn="timeTypeName" DataSetColumn="timeTypeName" />
+              <Mapping SourceColumn="fileCaseNumberYear" DataSetColumn="fileCaseNumberYear" />
+              <Mapping SourceColumn="fileCaseNumberInSystem" DataSetColumn="fileCaseNumberInSystem" />
+              <Mapping SourceColumn="timeText" DataSetColumn="timeText" />
+              <Mapping SourceColumn="timeType" DataSetColumn="timeType" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rpt_PersonCasesTableAdapter" GeneratorDataComponentClassName="rpt_PersonCasesTableAdapter" Name="rpt_PersonCases" UserDataComponentName="rpt_PersonCasesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwdicdad2_MainServer (MySettings)" DbObjectName="``.`nwdicdad2`.`Temp_rptPersonCases`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`Temp_rptPersonCases`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="fileCaseID" DataSetColumn="fileCaseID" />
+              <Mapping SourceColumn="custID" DataSetColumn="custID" />
+              <Mapping SourceColumn="custFullName" DataSetColumn="custFullName" />
+              <Mapping SourceColumn="davi" DataSetColumn="davi" />
+              <Mapping SourceColumn="fileCaseNumberInSystem" DataSetColumn="fileCaseNumberInSystem" />
+              <Mapping SourceColumn="fileCaseOpenDate" DataSetColumn="fileCaseOpenDate" />
+              <Mapping SourceColumn="fileCaseSubject" DataSetColumn="fileCaseSubject" />
+              <Mapping SourceColumn="status" DataSetColumn="status" />
+              <Mapping SourceColumn="fileCaseCloseDate" DataSetColumn="fileCaseCloseDate" />
+              <Mapping SourceColumn="FileCaseNumber" DataSetColumn="FileCaseNumber" />
+              <Mapping SourceColumn="fileCaseStep" DataSetColumn="fileCaseStep" />
+              <Mapping SourceColumn="fileRelationId" DataSetColumn="fileRelationId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rpt_fixClericalSpendingTableAdapter" GeneratorDataComponentClassName="rpt_fixClericalSpendingTableAdapter" Name="rpt_fixClericalSpending" UserDataComponentName="rpt_fixClericalSpendingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwdicdad2_MainServer (MySettings)" DbObjectName="``.`nwdicdad2`.`testReport`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`testReport`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="financeId" DataSetColumn="financeId" />
+              <Mapping SourceColumn="financePaymentDate" DataSetColumn="financePaymentDate" />
+              <Mapping SourceColumn="financeAmount" DataSetColumn="financeAmount" />
+              <Mapping SourceColumn="finaceTypeID" DataSetColumn="finaceTypeID" />
+              <Mapping SourceColumn="financeDesc" DataSetColumn="financeDesc" />
+              <Mapping SourceColumn="financeTypeName" DataSetColumn="financeTypeName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rpt_FixConsultingTableAdapter" GeneratorDataComponentClassName="rpt_FixConsultingTableAdapter" Name="rpt_FixConsulting" UserDataComponentName="rpt_FixConsultingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwdicdad2_MainServer (MySettings)" DbObjectName="``.`nwdicdad2`.`testReport`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`testReport`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="timeSourceCustID" DataSetColumn="timeSourceCustID" />
+              <Mapping SourceColumn="tpTargetCustID" DataSetColumn="tpTargetCustID" />
+              <Mapping SourceColumn="timeID" DataSetColumn="timeID" />
+              <Mapping SourceColumn="timeTitle" DataSetColumn="timeTitle" />
+              <Mapping SourceColumn="timeText" DataSetColumn="timeText" />
+              <Mapping SourceColumn="timeType" DataSetColumn="timeType" />
+              <Mapping SourceColumn="tpid" DataSetColumn="tpid" />
+              <Mapping SourceColumn="timeTime" DataSetColumn="timeTime" />
+              <Mapping SourceColumn="timeDate" DataSetColumn="timeDate" />
+              <Mapping SourceColumn="financeAmount" DataSetColumn="financeAmount" />
+              <Mapping SourceColumn="financeCustID" DataSetColumn="financeCustID" />
+              <Mapping SourceColumn="reciever" DataSetColumn="reciever" />
+              <Mapping SourceColumn="sender" DataSetColumn="sender" />
+              <Mapping SourceColumn="movakel" DataSetColumn="movakel" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dt_rptFixHazineTableAdapter" GeneratorDataComponentClassName="dt_rptFixHazineTableAdapter" Name="dt_rptFixHazine" UserDataComponentName="dt_rptFixHazineTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwdicdad2_MainServer (MySettings)" DbObjectName="``.`nwdicdad2`.`testReport`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`testReport`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="financeBankID" DataSetColumn="financeBankID" />
+              <Mapping SourceColumn="financeBranchID" DataSetColumn="financeBranchID" />
+              <Mapping SourceColumn="finaceTypeID" DataSetColumn="finaceTypeID" />
+              <Mapping SourceColumn="financeID" DataSetColumn="financeID" />
+              <Mapping SourceColumn="financePaymentDate" DataSetColumn="financePaymentDate" />
+              <Mapping SourceColumn="financePaymentType" DataSetColumn="financePaymentType" />
+              <Mapping SourceColumn="AmountDaryafti" DataSetColumn="AmountDaryafti" />
+              <Mapping SourceColumn="AmountHazine" DataSetColumn="AmountHazine" />
+              <Mapping SourceColumn="financePaymentTime" DataSetColumn="financePaymentTime" />
+              <Mapping SourceColumn="financeChequeSerial" DataSetColumn="financeChequeSerial" />
+              <Mapping SourceColumn="financeDesc" DataSetColumn="financeDesc" />
+              <Mapping SourceColumn="financeType" DataSetColumn="financeType" />
+              <Mapping SourceColumn="BranchName" DataSetColumn="BranchName" />
+              <Mapping SourceColumn="bankName" DataSetColumn="bankName" />
+              <Mapping SourceColumn="custFullName" DataSetColumn="custFullName" />
+              <Mapping SourceColumn="FileCaseNumber" DataSetColumn="FileCaseNumber" />
+              <Mapping SourceColumn="shobe" DataSetColumn="shobe" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dt_rptIncomingTableAdapter" GeneratorDataComponentClassName="dt_rptIncomingTableAdapter" Name="dt_rptIncoming" UserDataComponentName="dt_rptIncomingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwdicdad2_MainServer (MySettings)" DbObjectName="``.`nwdicdad2`.`testReport`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`nwdicdad2`.`testReport`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="financeCustID" DataSetColumn="financeCustID" />
+              <Mapping SourceColumn="AmountHazine" DataSetColumn="AmountHazine" />
+              <Mapping SourceColumn="AmountDaryaft" DataSetColumn="AmountDaryaft" />
+              <Mapping SourceColumn="custFullName" DataSetColumn="custFullName" />
+              <Mapping SourceColumn="mande" DataSetColumn="mande" />
+              <Mapping SourceColumn="rownumber" DataSetColumn="rownumber" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rpt_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="rpt_DataSet" msprop:Generator_DataSetName="rpt_DataSet" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="stpRpt" msprop:Generator_UserTableName="stpRpt" msprop:Generator_RowDeletedName="stpRptRowDeleted" msprop:Generator_RowChangedName="stpRptRowChanged" msprop:Generator_RowClassName="stpRptRow" msprop:Generator_RowChangingName="stpRptRowChanging" msprop:Generator_RowEvArgName="stpRptRowChangeEvent" msprop:Generator_RowEvHandlerName="stpRptRowChangeEventHandler" msprop:Generator_TableClassName="stpRptDataTable" msprop:Generator_TableVarName="tablestpRpt" msprop:Generator_RowDeletingName="stpRptRowDeleting" msprop:Generator_TablePropName="stpRpt">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="typeResult" msprop:Generator_UserColumnName="typeResult" msprop:Generator_ColumnPropNameInRow="typeResult" msprop:Generator_ColumnVarNameInTable="columntypeResult" msprop:Generator_ColumnPropNameInTable="typeResultColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseOpenDate" msprop:Generator_UserColumnName="fileCaseOpenDate" msprop:Generator_ColumnPropNameInRow="fileCaseOpenDate" msprop:Generator_ColumnVarNameInTable="columnfileCaseOpenDate" msprop:Generator_ColumnPropNameInTable="fileCaseOpenDateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="status" msprop:Generator_UserColumnName="status" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInTable="statusColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseNumber" msprop:Generator_UserColumnName="fileCaseNumber" msprop:Generator_ColumnPropNameInRow="fileCaseNumber" msprop:Generator_ColumnVarNameInTable="columnfileCaseNumber" msprop:Generator_ColumnPropNameInTable="fileCaseNumberColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseSubject" msprop:Generator_UserColumnName="fileCaseSubject" msprop:Generator_ColumnPropNameInRow="fileCaseSubject" msprop:Generator_ColumnVarNameInTable="columnfileCaseSubject" msprop:Generator_ColumnPropNameInTable="fileCaseSubjectColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="custFullName" msprop:Generator_UserColumnName="custFullName" msprop:Generator_ColumnPropNameInRow="custFullName" msprop:Generator_ColumnVarNameInTable="columncustFullName" msprop:Generator_ColumnPropNameInTable="custFullNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="contactInfoID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="contactInfoID" msprop:Generator_ColumnPropNameInRow="contactInfoID" msprop:Generator_ColumnVarNameInTable="columncontactInfoID" msprop:Generator_ColumnPropNameInTable="contactInfoIDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="stpRpt2" msprop:Generator_UserTableName="stpRpt2" msprop:Generator_RowDeletedName="stpRpt2RowDeleted" msprop:Generator_RowChangedName="stpRpt2RowChanged" msprop:Generator_RowClassName="stpRpt2Row" msprop:Generator_RowChangingName="stpRpt2RowChanging" msprop:Generator_RowEvArgName="stpRpt2RowChangeEvent" msprop:Generator_RowEvHandlerName="stpRpt2RowChangeEventHandler" msprop:Generator_TableClassName="stpRpt2DataTable" msprop:Generator_TableVarName="tablestpRpt2" msprop:Generator_RowDeletingName="stpRpt2RowDeleting" msprop:Generator_TablePropName="stpRpt2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fileCaseOpenDate" msprop:Generator_UserColumnName="fileCaseOpenDate" msprop:Generator_ColumnPropNameInRow="fileCaseOpenDate" msprop:Generator_ColumnVarNameInTable="columnfileCaseOpenDate" msprop:Generator_ColumnPropNameInTable="fileCaseOpenDateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="fileCaseNumber" msprop:Generator_UserColumnName="fileCaseNumber" msprop:Generator_ColumnPropNameInRow="fileCaseNumber" msprop:Generator_ColumnVarNameInTable="columnfileCaseNumber" msprop:Generator_ColumnPropNameInTable="fileCaseNumberColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseSubject" msprop:Generator_UserColumnName="fileCaseSubject" msprop:Generator_ColumnPropNameInRow="fileCaseSubject" msprop:Generator_ColumnVarNameInTable="columnfileCaseSubject" msprop:Generator_ColumnPropNameInTable="fileCaseSubjectColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="custFullName" msprop:Generator_UserColumnName="custFullName" msprop:Generator_ColumnPropNameInRow="custFullName" msprop:Generator_ColumnVarNameInTable="columncustFullName" msprop:Generator_ColumnPropNameInTable="custFullNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="contactInfoID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="contactInfoID" msprop:Generator_ColumnPropNameInRow="contactInfoID" msprop:Generator_ColumnVarNameInTable="columncontactInfoID" msprop:Generator_ColumnPropNameInTable="contactInfoIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="filecount" msprop:Generator_UserColumnName="filecount" msprop:Generator_ColumnPropNameInRow="filecount" msprop:Generator_ColumnVarNameInTable="columnfilecount" msprop:Generator_ColumnPropNameInTable="filecountColumn" type="xs:long" />
+              <xs:element name="status" msprop:Generator_UserColumnName="status" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInTable="statusColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="stpRpt3" msprop:Generator_UserTableName="stpRpt3" msprop:Generator_RowDeletedName="stpRpt3RowDeleted" msprop:Generator_RowChangedName="stpRpt3RowChanged" msprop:Generator_RowClassName="stpRpt3Row" msprop:Generator_RowChangingName="stpRpt3RowChanging" msprop:Generator_RowEvArgName="stpRpt3RowChangeEvent" msprop:Generator_RowEvHandlerName="stpRpt3RowChangeEventHandler" msprop:Generator_TableClassName="stpRpt3DataTable" msprop:Generator_TableVarName="tablestpRpt3" msprop:Generator_RowDeletingName="stpRpt3RowDeleting" msprop:Generator_TablePropName="stpRpt3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fileCaseOpenDate" msprop:Generator_UserColumnName="fileCaseOpenDate" msprop:Generator_ColumnVarNameInTable="columnfileCaseOpenDate" msprop:Generator_ColumnPropNameInRow="fileCaseOpenDate" msprop:Generator_ColumnPropNameInTable="fileCaseOpenDateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="fileCaseNumber" msprop:Generator_UserColumnName="fileCaseNumber" msprop:Generator_ColumnVarNameInTable="columnfileCaseNumber" msprop:Generator_ColumnPropNameInRow="fileCaseNumber" msprop:Generator_ColumnPropNameInTable="fileCaseNumberColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="status" msprop:Generator_UserColumnName="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseSubject" msprop:Generator_UserColumnName="fileCaseSubject" msprop:Generator_ColumnVarNameInTable="columnfileCaseSubject" msprop:Generator_ColumnPropNameInRow="fileCaseSubject" msprop:Generator_ColumnPropNameInTable="fileCaseSubjectColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="custFullName" msprop:Generator_UserColumnName="custFullName" msprop:Generator_ColumnVarNameInTable="columncustFullName" msprop:Generator_ColumnPropNameInRow="custFullName" msprop:Generator_ColumnPropNameInTable="custFullNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="contactInfoID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="contactInfoID" msprop:Generator_ColumnVarNameInTable="columncontactInfoID" msprop:Generator_ColumnPropNameInRow="contactInfoID" msprop:Generator_ColumnPropNameInTable="contactInfoIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="financeAmount" msprop:Generator_UserColumnName="financeAmount" msprop:Generator_ColumnVarNameInTable="columnfinanceAmount" msprop:Generator_ColumnPropNameInRow="financeAmount" msprop:Generator_ColumnPropNameInTable="financeAmountColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="hazineType" msprop:Generator_UserColumnName="hazineType" msprop:Generator_ColumnVarNameInTable="columnhazineType" msprop:Generator_ColumnPropNameInRow="hazineType" msprop:Generator_ColumnPropNameInTable="hazineTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rpt_CaseDocuments" msprop:Generator_UserTableName="rpt_CaseDocuments" msprop:Generator_RowDeletedName="rpt_CaseDocumentsRowDeleted" msprop:Generator_RowChangedName="rpt_CaseDocumentsRowChanged" msprop:Generator_RowClassName="rpt_CaseDocumentsRow" msprop:Generator_RowChangingName="rpt_CaseDocumentsRowChanging" msprop:Generator_RowEvArgName="rpt_CaseDocumentsRowChangeEvent" msprop:Generator_RowEvHandlerName="rpt_CaseDocumentsRowChangeEventHandler" msprop:Generator_TableClassName="rpt_CaseDocumentsDataTable" msprop:Generator_TableVarName="tablerpt_CaseDocuments" msprop:Generator_RowDeletingName="rpt_CaseDocumentsRowDeleting" msprop:Generator_TablePropName="rpt_CaseDocuments">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fileFullName" msprop:Generator_UserColumnName="fileFullName" msprop:Generator_ColumnPropNameInRow="fileFullName" msprop:Generator_ColumnVarNameInTable="columnfileFullName" msprop:Generator_ColumnPropNameInTable="fileFullNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="110" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileDocDate" msprop:Generator_UserColumnName="fileDocDate" msprop:Generator_ColumnPropNameInRow="fileDocDate" msprop:Generator_ColumnVarNameInTable="columnfileDocDate" msprop:Generator_ColumnPropNameInTable="fileDocDateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="fileDocTime" msprop:Generator_UserColumnName="fileDocTime" msprop:Generator_ColumnPropNameInRow="fileDocTime" msprop:Generator_ColumnVarNameInTable="columnfileDocTime" msprop:Generator_ColumnPropNameInTable="fileDocTimeColumn" type="xs:duration" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rpt_Hazine" msprop:Generator_UserTableName="rpt_Hazine" msprop:Generator_RowDeletedName="rpt_HazineRowDeleted" msprop:Generator_RowChangedName="rpt_HazineRowChanged" msprop:Generator_RowClassName="rpt_HazineRow" msprop:Generator_RowChangingName="rpt_HazineRowChanging" msprop:Generator_RowEvArgName="rpt_HazineRowChangeEvent" msprop:Generator_RowEvHandlerName="rpt_HazineRowChangeEventHandler" msprop:Generator_TableClassName="rpt_HazineDataTable" msprop:Generator_TableVarName="tablerpt_Hazine" msprop:Generator_RowDeletingName="rpt_HazineRowDeleting" msprop:Generator_TablePropName="rpt_Hazine">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AmountHazine" msprop:Generator_UserColumnName="AmountHazine" msprop:Generator_ColumnPropNameInRow="AmountHazine" msprop:Generator_ColumnVarNameInTable="columnAmountHazine" msprop:Generator_ColumnPropNameInTable="AmountHazineColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="AmountDaryaft" msprop:Generator_UserColumnName="AmountDaryaft" msprop:Generator_ColumnPropNameInRow="AmountDaryaft" msprop:Generator_ColumnVarNameInTable="columnAmountDaryaft" msprop:Generator_ColumnPropNameInTable="AmountDaryaftColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="financeID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="financeID" msprop:Generator_ColumnPropNameInRow="financeID" msprop:Generator_ColumnVarNameInTable="columnfinanceID" msprop:Generator_ColumnPropNameInTable="financeIDColumn" type="xs:string" />
+              <xs:element name="financeType" msprop:Generator_UserColumnName="financeType" msprop:Generator_ColumnPropNameInRow="financeType" msprop:Generator_ColumnVarNameInTable="columnfinanceType" msprop:Generator_ColumnPropNameInTable="financeTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="description" msprop:Generator_UserColumnName="description" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_ColumnPropNameInTable="descriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FileCaseNumber" msprop:Generator_UserColumnName="FileCaseNumber" msprop:Generator_ColumnPropNameInRow="FileCaseNumber" msprop:Generator_ColumnVarNameInTable="columnFileCaseNumber" msprop:Generator_ColumnPropNameInTable="FileCaseNumberColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="68" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="fileCaseID" msprop:Generator_ColumnPropNameInRow="fileCaseID" msprop:Generator_ColumnVarNameInTable="columnfileCaseID" msprop:Generator_ColumnPropNameInTable="fileCaseIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="custFullName" msprop:Generator_UserColumnName="custFullName" msprop:Generator_ColumnPropNameInRow="custFullName" msprop:Generator_ColumnVarNameInTable="columncustFullName" msprop:Generator_ColumnPropNameInTable="custFullNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="financeChequeSerial" msprop:Generator_UserColumnName="financeChequeSerial" msprop:Generator_ColumnPropNameInRow="financeChequeSerial" msprop:Generator_ColumnVarNameInTable="columnfinanceChequeSerial" msprop:Generator_ColumnPropNameInTable="financeChequeSerialColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BranchName" msprop:Generator_UserColumnName="BranchName" msprop:Generator_ColumnPropNameInRow="BranchName" msprop:Generator_ColumnVarNameInTable="columnBranchName" msprop:Generator_ColumnPropNameInTable="BranchNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="financePaymentDate" msprop:Generator_UserColumnName="financePaymentDate" msprop:Generator_ColumnPropNameInRow="financePaymentDate" msprop:Generator_ColumnVarNameInTable="columnfinancePaymentDate" msprop:Generator_ColumnPropNameInTable="financePaymentDateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="financePaymentTime" msprop:Generator_UserColumnName="financePaymentTime" msprop:Generator_ColumnPropNameInRow="financePaymentTime" msprop:Generator_ColumnVarNameInTable="columnfinancePaymentTime" msprop:Generator_ColumnPropNameInTable="financePaymentTimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="24" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rpt_FixActions" msprop:Generator_UserTableName="rpt_FixActions" msprop:Generator_RowDeletedName="rpt_FixActionsRowDeleted" msprop:Generator_RowChangedName="rpt_FixActionsRowChanged" msprop:Generator_RowClassName="rpt_FixActionsRow" msprop:Generator_RowChangingName="rpt_FixActionsRowChanging" msprop:Generator_RowEvArgName="rpt_FixActionsRowChangeEvent" msprop:Generator_RowEvHandlerName="rpt_FixActionsRowChangeEventHandler" msprop:Generator_TableClassName="rpt_FixActionsDataTable" msprop:Generator_TableVarName="tablerpt_FixActions" msprop:Generator_RowDeletingName="rpt_FixActionsRowDeleting" msprop:Generator_TablePropName="rpt_FixActions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="timeID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="timeID" msprop:Generator_ColumnVarNameInTable="columntimeID" msprop:Generator_ColumnPropNameInRow="timeID" msprop:Generator_ColumnPropNameInTable="timeIDColumn" type="xs:string" />
+              <xs:element name="tpID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="tpID" msprop:Generator_ColumnVarNameInTable="columntpID" msprop:Generator_ColumnPropNameInRow="tpID" msprop:Generator_ColumnPropNameInTable="tpIDColumn" type="xs:string" />
+              <xs:element name="timeTitle" msprop:Generator_UserColumnName="timeTitle" msprop:Generator_ColumnVarNameInTable="columntimeTitle" msprop:Generator_ColumnPropNameInRow="timeTitle" msprop:Generator_ColumnPropNameInTable="timeTitleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="custFullName" msprop:Generator_UserColumnName="custFullName" msprop:Generator_ColumnVarNameInTable="columncustFullName" msprop:Generator_ColumnPropNameInRow="custFullName" msprop:Generator_ColumnPropNameInTable="custFullNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="timeDate" msprop:Generator_UserColumnName="timeDate" msprop:Generator_ColumnVarNameInTable="columntimeDate" msprop:Generator_ColumnPropNameInRow="timeDate" msprop:Generator_ColumnPropNameInTable="timeDateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="timeActualTime" msprop:Generator_UserColumnName="timeActualTime" msprop:Generator_ColumnVarNameInTable="columntimeActualTime" msprop:Generator_ColumnPropNameInRow="timeActualTime" msprop:Generator_ColumnPropNameInTable="timeActualTimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="24" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="timeDone" msprop:Generator_UserColumnName="timeDone" msprop:Generator_ColumnVarNameInTable="columntimeDone" msprop:Generator_ColumnPropNameInRow="timeDone" msprop:Generator_ColumnPropNameInTable="timeDoneColumn" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="timeTime" msprop:Generator_UserColumnName="timeTime" msprop:Generator_ColumnVarNameInTable="columntimeTime" msprop:Generator_ColumnPropNameInRow="timeTime" msprop:Generator_ColumnPropNameInTable="timeTimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="24" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseNumber" msprop:Generator_UserColumnName="fileCaseNumber" msprop:Generator_ColumnVarNameInTable="columnfileCaseNumber" msprop:Generator_ColumnPropNameInRow="fileCaseNumber" msprop:Generator_ColumnPropNameInTable="fileCaseNumberColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="timeTypeName" msprop:Generator_UserColumnName="timeTypeName" msprop:Generator_ColumnVarNameInTable="columntimeTypeName" msprop:Generator_ColumnPropNameInRow="timeTypeName" msprop:Generator_ColumnPropNameInTable="timeTypeNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseNumberYear" msprop:Generator_UserColumnName="fileCaseNumberYear" msprop:Generator_ColumnVarNameInTable="columnfileCaseNumberYear" msprop:Generator_ColumnPropNameInRow="fileCaseNumberYear" msprop:Generator_ColumnPropNameInTable="fileCaseNumberYearColumn" type="xs:string" />
+              <xs:element name="fileCaseNumberInSystem" msprop:Generator_UserColumnName="fileCaseNumberInSystem" msprop:Generator_ColumnVarNameInTable="columnfileCaseNumberInSystem" msprop:Generator_ColumnPropNameInRow="fileCaseNumberInSystem" msprop:Generator_ColumnPropNameInTable="fileCaseNumberInSystemColumn" type="xs:string" />
+              <xs:element name="timeText" msprop:Generator_UserColumnName="timeText" msprop:Generator_ColumnVarNameInTable="columntimeText" msprop:Generator_ColumnPropNameInRow="timeText" msprop:Generator_ColumnPropNameInTable="timeTextColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="timeType" msprop:Generator_UserColumnName="timeType" msprop:Generator_ColumnVarNameInTable="columntimeType" msprop:Generator_ColumnPropNameInRow="timeType" msprop:Generator_ColumnPropNameInTable="timeTypeColumn" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rpt_PersonCases" msprop:Generator_UserTableName="rpt_PersonCases" msprop:Generator_RowDeletedName="rpt_PersonCasesRowDeleted" msprop:Generator_RowChangedName="rpt_PersonCasesRowChanged" msprop:Generator_RowClassName="rpt_PersonCasesRow" msprop:Generator_RowChangingName="rpt_PersonCasesRowChanging" msprop:Generator_RowEvArgName="rpt_PersonCasesRowChangeEvent" msprop:Generator_RowEvHandlerName="rpt_PersonCasesRowChangeEventHandler" msprop:Generator_TableClassName="rpt_PersonCasesDataTable" msprop:Generator_TableVarName="tablerpt_PersonCases" msprop:Generator_RowDeletingName="rpt_PersonCasesRowDeleting" msprop:Generator_TablePropName="rpt_PersonCases">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fileCaseID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="fileCaseID" msprop:Generator_ColumnVarNameInTable="columnfileCaseID" msprop:Generator_ColumnPropNameInRow="fileCaseID" msprop:Generator_ColumnPropNameInTable="fileCaseIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="custID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="custID" msprop:Generator_ColumnVarNameInTable="columncustID" msprop:Generator_ColumnPropNameInRow="custID" msprop:Generator_ColumnPropNameInTable="custIDColumn" type="xs:string" />
+              <xs:element name="custFullName" msprop:Generator_UserColumnName="custFullName" msprop:Generator_ColumnVarNameInTable="columncustFullName" msprop:Generator_ColumnPropNameInRow="custFullName" msprop:Generator_ColumnPropNameInTable="custFullNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="davi" msprop:Generator_UserColumnName="davi" msprop:Generator_ColumnVarNameInTable="columndavi" msprop:Generator_ColumnPropNameInRow="davi" msprop:Generator_ColumnPropNameInTable="daviColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="341" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseNumberInSystem" msprop:Generator_UserColumnName="fileCaseNumberInSystem" msprop:Generator_ColumnVarNameInTable="columnfileCaseNumberInSystem" msprop:Generator_ColumnPropNameInRow="fileCaseNumberInSystem" msprop:Generator_ColumnPropNameInTable="fileCaseNumberInSystemColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseOpenDate" msprop:Generator_UserColumnName="fileCaseOpenDate" msprop:Generator_ColumnVarNameInTable="columnfileCaseOpenDate" msprop:Generator_ColumnPropNameInRow="fileCaseOpenDate" msprop:Generator_ColumnPropNameInTable="fileCaseOpenDateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="fileCaseSubject" msprop:Generator_UserColumnName="fileCaseSubject" msprop:Generator_ColumnVarNameInTable="columnfileCaseSubject" msprop:Generator_ColumnPropNameInRow="fileCaseSubject" msprop:Generator_ColumnPropNameInTable="fileCaseSubjectColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="status" msprop:Generator_UserColumnName="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseCloseDate" msprop:Generator_UserColumnName="fileCaseCloseDate" msprop:Generator_ColumnVarNameInTable="columnfileCaseCloseDate" msprop:Generator_ColumnPropNameInRow="fileCaseCloseDate" msprop:Generator_ColumnPropNameInTable="fileCaseCloseDateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FileCaseNumber" msprop:Generator_UserColumnName="FileCaseNumber" msprop:Generator_ColumnVarNameInTable="columnFileCaseNumber" msprop:Generator_ColumnPropNameInRow="FileCaseNumber" msprop:Generator_ColumnPropNameInTable="FileCaseNumberColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="44" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileCaseStep" msprop:Generator_UserColumnName="fileCaseStep" msprop:Generator_ColumnVarNameInTable="columnfileCaseStep" msprop:Generator_ColumnPropNameInRow="fileCaseStep" msprop:Generator_ColumnPropNameInTable="fileCaseStepColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fileRelationId" msprop:Generator_UserColumnName="fileRelationId" msprop:Generator_ColumnVarNameInTable="columnfileRelationId" msprop:Generator_ColumnPropNameInRow="fileRelationId" msprop:Generator_ColumnPropNameInTable="fileRelationIdColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rpt_fixClericalSpending" msprop:Generator_UserTableName="rpt_fixClericalSpending" msprop:Generator_RowDeletedName="rpt_fixClericalSpendingRowDeleted" msprop:Generator_RowChangedName="rpt_fixClericalSpendingRowChanged" msprop:Generator_RowClassName="rpt_fixClericalSpendingRow" msprop:Generator_RowChangingName="rpt_fixClericalSpendingRowChanging" msprop:Generator_RowEvArgName="rpt_fixClericalSpendingRowChangeEvent" msprop:Generator_RowEvHandlerName="rpt_fixClericalSpendingRowChangeEventHandler" msprop:Generator_TableClassName="rpt_fixClericalSpendingDataTable" msprop:Generator_TableVarName="tablerpt_fixClericalSpending" msprop:Generator_RowDeletingName="rpt_fixClericalSpendingRowDeleting" msprop:Generator_TablePropName="rpt_fixClericalSpending">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="financeId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="financeId" msprop:Generator_ColumnPropNameInRow="financeId" msprop:Generator_ColumnVarNameInTable="columnfinanceId" msprop:Generator_ColumnPropNameInTable="financeIdColumn" type="xs:string" />
+              <xs:element name="financePaymentDate" msprop:Generator_UserColumnName="financePaymentDate" msprop:Generator_ColumnPropNameInRow="financePaymentDate" msprop:Generator_ColumnVarNameInTable="columnfinancePaymentDate" msprop:Generator_ColumnPropNameInTable="financePaymentDateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="financeAmount" msprop:Generator_UserColumnName="financeAmount" msprop:Generator_ColumnPropNameInRow="financeAmount" msprop:Generator_ColumnVarNameInTable="columnfinanceAmount" msprop:Generator_ColumnPropNameInTable="financeAmountColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="finaceTypeID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="finaceTypeID" msprop:Generator_ColumnPropNameInRow="finaceTypeID" msprop:Generator_ColumnVarNameInTable="columnfinaceTypeID" msprop:Generator_ColumnPropNameInTable="finaceTypeIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="financeDesc" msprop:Generator_UserColumnName="financeDesc" msprop:Generator_ColumnPropNameInRow="financeDesc" msprop:Generator_ColumnVarNameInTable="columnfinanceDesc" msprop:Generator_ColumnPropNameInTable="financeDescColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="financeTypeName" msprop:Generator_UserColumnName="financeTypeName" msprop:Generator_ColumnPropNameInRow="financeTypeName" msprop:Generator_ColumnVarNameInTable="columnfinanceTypeName" msprop:Generator_ColumnPropNameInTable="financeTypeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rpt_FixConsulting" msprop:Generator_UserTableName="rpt_FixConsulting" msprop:Generator_RowDeletedName="rpt_FixConsultingRowDeleted" msprop:Generator_RowChangedName="rpt_FixConsultingRowChanged" msprop:Generator_RowClassName="rpt_FixConsultingRow" msprop:Generator_RowChangingName="rpt_FixConsultingRowChanging" msprop:Generator_RowEvArgName="rpt_FixConsultingRowChangeEvent" msprop:Generator_RowEvHandlerName="rpt_FixConsultingRowChangeEventHandler" msprop:Generator_TableClassName="rpt_FixConsultingDataTable" msprop:Generator_TableVarName="tablerpt_FixConsulting" msprop:Generator_RowDeletingName="rpt_FixConsultingRowDeleting" msprop:Generator_TablePropName="rpt_FixConsulting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="timeSourceCustID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="timeSourceCustID" msprop:Generator_ColumnVarNameInTable="columntimeSourceCustID" msprop:Generator_ColumnPropNameInRow="timeSourceCustID" msprop:Generator_ColumnPropNameInTable="timeSourceCustIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="tpTargetCustID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="tpTargetCustID" msprop:Generator_ColumnVarNameInTable="columntpTargetCustID" msprop:Generator_ColumnPropNameInRow="tpTargetCustID" msprop:Generator_ColumnPropNameInTable="tpTargetCustIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="timeID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="timeID" msprop:Generator_ColumnVarNameInTable="columntimeID" msprop:Generator_ColumnPropNameInRow="timeID" msprop:Generator_ColumnPropNameInTable="timeIDColumn" type="xs:string" />
+              <xs:element name="timeTitle" msprop:Generator_UserColumnName="timeTitle" msprop:Generator_ColumnVarNameInTable="columntimeTitle" msprop:Generator_ColumnPropNameInRow="timeTitle" msprop:Generator_ColumnPropNameInTable="timeTitleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="timeText" msprop:Generator_UserColumnName="timeText" msprop:Generator_ColumnVarNameInTable="columntimeText" msprop:Generator_ColumnPropNameInRow="timeText" msprop:Generator_ColumnPropNameInTable="timeTextColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="timeType" msprop:Generator_UserColumnName="timeType" msprop:Generator_ColumnVarNameInTable="columntimeType" msprop:Generator_ColumnPropNameInRow="timeType" msprop:Generator_ColumnPropNameInTable="timeTypeColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="tpid" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="tpid" msprop:Generator_ColumnVarNameInTable="columntpid" msprop:Generator_ColumnPropNameInRow="tpid" msprop:Generator_ColumnPropNameInTable="tpidColumn" type="xs:string" />
+              <xs:element name="timeTime" msprop:Generator_UserColumnName="timeTime" msprop:Generator_ColumnVarNameInTable="columntimeTime" msprop:Generator_ColumnPropNameInRow="timeTime" msprop:Generator_ColumnPropNameInTable="timeTimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="24" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="timeDate" msprop:Generator_UserColumnName="timeDate" msprop:Generator_ColumnVarNameInTable="columntimeDate" msprop:Generator_ColumnPropNameInRow="timeDate" msprop:Generator_ColumnPropNameInTable="timeDateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="financeAmount" msprop:Generator_UserColumnName="financeAmount" msprop:Generator_ColumnVarNameInTable="columnfinanceAmount" msprop:Generator_ColumnPropNameInRow="financeAmount" msprop:Generator_ColumnPropNameInTable="financeAmountColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="financeCustID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="financeCustID" msprop:Generator_ColumnVarNameInTable="columnfinanceCustID" msprop:Generator_ColumnPropNameInRow="financeCustID" msprop:Generator_ColumnPropNameInTable="financeCustIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="reciever" msprop:Generator_UserColumnName="reciever" msprop:Generator_ColumnVarNameInTable="columnreciever" msprop:Generator_ColumnPropNameInRow="reciever" msprop:Generator_ColumnPropNameInTable="recieverColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sender" msprop:Generator_UserColumnName="sender" msprop:Generator_ColumnVarNameInTable="columnsender" msprop:Generator_ColumnPropNameInRow="sender" msprop:Generator_ColumnPropNameInTable="senderColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="movakel" msprop:Generator_UserColumnName="movakel" msprop:Generator_ColumnVarNameInTable="columnmovakel" msprop:Generator_ColumnPropNameInRow="movakel" msprop:Generator_ColumnPropNameInTable="movakelColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dt_rptFixHazine" msprop:Generator_UserTableName="dt_rptFixHazine" msprop:Generator_RowDeletedName="dt_rptFixHazineRowDeleted" msprop:Generator_RowChangedName="dt_rptFixHazineRowChanged" msprop:Generator_RowClassName="dt_rptFixHazineRow" msprop:Generator_RowChangingName="dt_rptFixHazineRowChanging" msprop:Generator_RowEvArgName="dt_rptFixHazineRowChangeEvent" msprop:Generator_RowEvHandlerName="dt_rptFixHazineRowChangeEventHandler" msprop:Generator_TableClassName="dt_rptFixHazineDataTable" msprop:Generator_TableVarName="tabledt_rptFixHazine" msprop:Generator_RowDeletingName="dt_rptFixHazineRowDeleting" msprop:Generator_TablePropName="dt_rptFixHazine">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="financeBankID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="financeBankID" msprop:Generator_ColumnPropNameInRow="financeBankID" msprop:Generator_ColumnVarNameInTable="columnfinanceBankID" msprop:Generator_ColumnPropNameInTable="financeBankIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="financeBranchID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="financeBranchID" msprop:Generator_ColumnPropNameInRow="financeBranchID" msprop:Generator_ColumnVarNameInTable="columnfinanceBranchID" msprop:Generator_ColumnPropNameInTable="financeBranchIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="finaceTypeID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="finaceTypeID" msprop:Generator_ColumnPropNameInRow="finaceTypeID" msprop:Generator_ColumnVarNameInTable="columnfinaceTypeID" msprop:Generator_ColumnPropNameInTable="finaceTypeIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="financeID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="financeID" msprop:Generator_ColumnPropNameInRow="financeID" msprop:Generator_ColumnVarNameInTable="columnfinanceID" msprop:Generator_ColumnPropNameInTable="financeIDColumn" type="xs:string" />
+              <xs:element name="financePaymentDate" msprop:Generator_UserColumnName="financePaymentDate" msprop:Generator_ColumnPropNameInRow="financePaymentDate" msprop:Generator_ColumnVarNameInTable="columnfinancePaymentDate" msprop:Generator_ColumnPropNameInTable="financePaymentDateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="financePaymentType" msprop:Generator_UserColumnName="financePaymentType" msprop:Generator_ColumnPropNameInRow="financePaymentType" msprop:Generator_ColumnVarNameInTable="columnfinancePaymentType" msprop:Generator_ColumnPropNameInTable="financePaymentTypeColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="AmountDaryafti" msprop:Generator_UserColumnName="AmountDaryafti" msprop:Generator_ColumnPropNameInRow="AmountDaryafti" msprop:Generator_ColumnVarNameInTable="columnAmountDaryafti" msprop:Generator_ColumnPropNameInTable="AmountDaryaftiColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="AmountHazine" msprop:Generator_UserColumnName="AmountHazine" msprop:Generator_ColumnPropNameInRow="AmountHazine" msprop:Generator_ColumnVarNameInTable="columnAmountHazine" msprop:Generator_ColumnPropNameInTable="AmountHazineColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="financePaymentTime" msprop:Generator_UserColumnName="financePaymentTime" msprop:Generator_ColumnPropNameInRow="financePaymentTime" msprop:Generator_ColumnVarNameInTable="columnfinancePaymentTime" msprop:Generator_ColumnPropNameInTable="financePaymentTimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="24" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="financeChequeSerial" msprop:Generator_UserColumnName="financeChequeSerial" msprop:Generator_ColumnPropNameInRow="financeChequeSerial" msprop:Generator_ColumnVarNameInTable="columnfinanceChequeSerial" msprop:Generator_ColumnPropNameInTable="financeChequeSerialColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="financeDesc" msprop:Generator_UserColumnName="financeDesc" msprop:Generator_ColumnPropNameInRow="financeDesc" msprop:Generator_ColumnVarNameInTable="columnfinanceDesc" msprop:Generator_ColumnPropNameInTable="financeDescColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="financeType" msprop:Generator_UserColumnName="financeType" msprop:Generator_ColumnPropNameInRow="financeType" msprop:Generator_ColumnVarNameInTable="columnfinanceType" msprop:Generator_ColumnPropNameInTable="financeTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BranchName" msprop:Generator_UserColumnName="BranchName" msprop:Generator_ColumnPropNameInRow="BranchName" msprop:Generator_ColumnVarNameInTable="columnBranchName" msprop:Generator_ColumnPropNameInTable="BranchNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bankName" msprop:Generator_UserColumnName="bankName" msprop:Generator_ColumnPropNameInRow="bankName" msprop:Generator_ColumnVarNameInTable="columnbankName" msprop:Generator_ColumnPropNameInTable="bankNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="custFullName" msprop:Generator_UserColumnName="custFullName" msprop:Generator_ColumnPropNameInRow="custFullName" msprop:Generator_ColumnVarNameInTable="columncustFullName" msprop:Generator_ColumnPropNameInTable="custFullNameColumn" type="xs:string" />
+              <xs:element name="FileCaseNumber" msprop:Generator_UserColumnName="FileCaseNumber" msprop:Generator_ColumnPropNameInRow="FileCaseNumber" msprop:Generator_ColumnVarNameInTable="columnFileCaseNumber" msprop:Generator_ColumnPropNameInTable="FileCaseNumberColumn" type="xs:string" />
+              <xs:element name="shobe" msprop:Generator_UserColumnName="shobe" msprop:Generator_ColumnPropNameInRow="shobe" msprop:Generator_ColumnVarNameInTable="columnshobe" msprop:Generator_ColumnPropNameInTable="shobeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dt_rptIncoming" msprop:Generator_UserTableName="dt_rptIncoming" msprop:Generator_RowDeletedName="dt_rptIncomingRowDeleted" msprop:Generator_RowChangedName="dt_rptIncomingRowChanged" msprop:Generator_RowClassName="dt_rptIncomingRow" msprop:Generator_RowChangingName="dt_rptIncomingRowChanging" msprop:Generator_RowEvArgName="dt_rptIncomingRowChangeEvent" msprop:Generator_RowEvHandlerName="dt_rptIncomingRowChangeEventHandler" msprop:Generator_TableClassName="dt_rptIncomingDataTable" msprop:Generator_TableVarName="tabledt_rptIncoming" msprop:Generator_RowDeletingName="dt_rptIncomingRowDeleting" msprop:Generator_TablePropName="dt_rptIncoming">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="financeCustID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="financeCustID" msprop:Generator_ColumnVarNameInTable="columnfinanceCustID" msprop:Generator_ColumnPropNameInRow="financeCustID" msprop:Generator_ColumnPropNameInTable="financeCustIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AmountHazine" msprop:Generator_UserColumnName="AmountHazine" msprop:Generator_ColumnVarNameInTable="columnAmountHazine" msprop:Generator_ColumnPropNameInRow="AmountHazine" msprop:Generator_ColumnPropNameInTable="AmountHazineColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="AmountDaryaft" msprop:Generator_UserColumnName="AmountDaryaft" msprop:Generator_ColumnVarNameInTable="columnAmountDaryaft" msprop:Generator_ColumnPropNameInRow="AmountDaryaft" msprop:Generator_ColumnPropNameInTable="AmountDaryaftColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="custFullName" msprop:Generator_UserColumnName="custFullName" msprop:Generator_ColumnVarNameInTable="columncustFullName" msprop:Generator_ColumnPropNameInRow="custFullName" msprop:Generator_ColumnPropNameInTable="custFullNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mande" msprop:Generator_UserColumnName="mande" msprop:Generator_ColumnVarNameInTable="columnmande" msprop:Generator_ColumnPropNameInRow="mande" msprop:Generator_ColumnPropNameInTable="mandeColumn" type="xs:long" />
+              <xs:element name="rownumber" msprop:Generator_UserColumnName="rownumber" msprop:Generator_ColumnVarNameInTable="columnrownumber" msprop:Generator_ColumnPropNameInRow="rownumber" msprop:Generator_ColumnPropNameInTable="rownumberColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:rpt_Hazine" />
+      <xs:field xpath="mstns:financeID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

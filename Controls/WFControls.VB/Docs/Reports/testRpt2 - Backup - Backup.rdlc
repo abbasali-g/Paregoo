@@ -1,0 +1,1252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="nwdicdad2ConnectionString">
+      <rd:DataSourceID>c935e169-400e-4e24-81f2-d26eaf93317c</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="pMovakel">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>pMovakel</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pDavi">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>pDavi</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pKarshenas">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>pKarshenas</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pVakil">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>pVakil</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <rd:ReportID>42c1361d-3bc5-4607-955d-7f59078c8bea</rd:ReportID>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="DataSet1_stp_rptTiming">
+      <Fields>
+        <Field Name="timeTitle">
+          <DataField>timeTitle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="timeText">
+          <DataField>timeText</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="timeFullDate">
+          <DataField>timeFullDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="timeTypeName">
+          <DataField>timeTypeName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>nwdicdad2ConnectionString</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>`nwdicdad2`.`stp_rptTiming`</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet1</rd:DataSetName>
+        <rd:TableName>stp_rptTiming</rd:TableName>
+        <rd:TableAdapterName>stp_rptTimingTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="DataSet1_testRpt2">
+      <Fields>
+        <Field Name="fileCaseNumberInSystem">
+          <DataField>fileCaseNumberInSystem</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fileCaseNumberInCourt">
+          <DataField>fileCaseNumberInCourt</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fileCaseNumberInBranch">
+          <DataField>fileCaseNumberInBranch</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fileCaseOpenDate">
+          <DataField>fileCaseOpenDate</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="fileCaseCloseDate">
+          <DataField>fileCaseCloseDate</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="fileCaseComplainantText">
+          <DataField>fileCaseComplainantText</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fileCaseCatText">
+          <DataField>fileCaseCatText</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fileCaseTypeText">
+          <DataField>fileCaseTypeText</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="StatusText">
+          <DataField>StatusText</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="filecaseResultDetailText">
+          <DataField>filecaseResultDetailText</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fileCaseSubject">
+          <DataField>fileCaseSubject</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fileCaseStepText">
+          <DataField>fileCaseStepText</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fileCaseDescription">
+          <DataField>fileCaseDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fileCaseAreaText">
+          <DataField>fileCaseAreaText</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fileCaseOtherDescription">
+          <DataField>fileCaseOtherDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DecryptedFileCasePass">
+          <DataField>DecryptedFileCasePass</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fileCaseCloseDateText">
+          <DataField>fileCaseCloseDateText</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>nwdicdad2ConnectionString</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>`nwdicdad2`.`testRpt2`</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet1</rd:DataSetName>
+        <rd:TableName>testRpt2</rd:TableName>
+        <rd:TableAdapterName>testRpt2TableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>21cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Rectangle Name="rectangle1">
+        <Left>0.78125cm</Left>
+        <ZIndex>1</ZIndex>
+        <ReportItems>
+          <Textbox Name="textbox30">
+            <Top>26.25cm</Top>
+            <Width>3.75cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>8pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>38</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.5cm</Left>
+            <Value>نرم افزار پرقو</Value>
+          </Textbox>
+          <Line Name="line1">
+            <Top>11cm</Top>
+            <Width>19.2cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>37</ZIndex>
+            <Left>0.1cm</Left>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="fileCaseSubject">
+            <rd:DefaultName>fileCaseSubject</rd:DefaultName>
+            <Top>12.25cm</Top>
+            <Width>17.25cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>36</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.5cm</Left>
+            <Height>1cm</Height>
+            <Value>=First(Fields!fileCaseSubject.Value, "DataSet1_testRpt2")</Value>
+          </Textbox>
+          <Table Name="table1">
+            <ZIndex>35</ZIndex>
+            <DataSetName>DataSet1_stp_rptTiming</DataSetName>
+            <Top>17cm</Top>
+            <Width>19cm</Width>
+            <Details>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="timeText">
+                          <rd:DefaultName>timeText</rd:DefaultName>
+                          <Style>
+                            <BorderColor>
+                              <Default>DarkGray</Default>
+                            </BorderColor>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                              <Top>Solid</Top>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <TextAlign>Right</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!timeText.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="timeFullDate">
+                          <rd:DefaultName>timeFullDate</rd:DefaultName>
+                          <Style>
+                            <BorderColor>
+                              <Default>DarkGray</Default>
+                            </BorderColor>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                              <Top>Solid</Top>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontFamily>B Lotus</FontFamily>
+                            <TextAlign>Right</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!timeFullDate.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="timeTypeName">
+                          <rd:DefaultName>timeTypeName</rd:DefaultName>
+                          <Style>
+                            <BorderColor>
+                              <Default>DarkGray</Default>
+                            </BorderColor>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <TextAlign>Right</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!timeTypeName.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="timeTitle">
+                          <rd:DefaultName>timeTitle</rd:DefaultName>
+                          <Style>
+                            <BorderColor>
+                              <Default>DarkGray</Default>
+                            </BorderColor>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                              <Top>Solid</Top>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <TextAlign>Right</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!timeTitle.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.63492cm</Height>
+                </TableRow>
+              </TableRows>
+            </Details>
+            <Style>
+              <BorderColor>
+                <Default>Gray</Default>
+              </BorderColor>
+            </Style>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox31">
+                          <rd:DefaultName>textbox31</rd:DefaultName>
+                          <Style>
+                            <BackgroundColor>Gainsboro</BackgroundColor>
+                            <BorderColor>
+                              <Default>DarkGray</Default>
+                            </BorderColor>
+                            <BorderStyle>
+                              <Left>Solid</Left>
+                              <Right>Solid</Right>
+                              <Top>Solid</Top>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <FontWeight>700</FontWeight>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <UserSort>
+                            <SortExpression>=Fields!timeText.Value</SortExpression>
+                          </UserSort>
+                          <Value>شرح</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox27">
+                          <rd:DefaultName>textbox27</rd:DefaultName>
+                          <Style>
+                            <BackgroundColor>Gainsboro</BackgroundColor>
+                            <BorderColor>
+                              <Default>DarkGray</Default>
+                            </BorderColor>
+                            <BorderStyle>
+                              <Left>Solid</Left>
+                              <Right>Solid</Right>
+                              <Top>Solid</Top>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <FontWeight>700</FontWeight>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <UserSort>
+                            <SortExpression>=Fields!timeFullDate.Value</SortExpression>
+                          </UserSort>
+                          <Value>تاریخ</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox28">
+                          <rd:DefaultName>textbox28</rd:DefaultName>
+                          <Style>
+                            <BackgroundColor>Gainsboro</BackgroundColor>
+                            <BorderColor>
+                              <Default>DarkGray</Default>
+                            </BorderColor>
+                            <BorderStyle>
+                              <Left>Solid</Left>
+                              <Right>Solid</Right>
+                              <Top>Solid</Top>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <FontWeight>700</FontWeight>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <UserSort>
+                            <SortExpression>=Fields!timeTypeName.Value</SortExpression>
+                          </UserSort>
+                          <Value>نوع</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox29">
+                          <rd:DefaultName>textbox29</rd:DefaultName>
+                          <Style>
+                            <BackgroundColor>Gainsboro</BackgroundColor>
+                            <BorderColor>
+                              <Default>DarkGray</Default>
+                            </BorderColor>
+                            <BorderStyle>
+                              <Left>Solid</Left>
+                              <Right>Solid</Right>
+                              <Top>Solid</Top>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <FontWeight>700</FontWeight>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <UserSort>
+                            <SortExpression>=Fields!timeTitle.Value</SortExpression>
+                          </UserSort>
+                          <Value>عنوان</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.63492cm</Height>
+                </TableRow>
+              </TableRows>
+              <FixedHeader>true</FixedHeader>
+            </Header>
+            <TableColumns>
+              <TableColumn>
+                <Width>6.77381cm</Width>
+              </TableColumn>
+              <TableColumn>
+                <Width>3.73806cm</Width>
+              </TableColumn>
+              <TableColumn>
+                <Width>3.42038cm</Width>
+              </TableColumn>
+              <TableColumn>
+                <Width>5.06775cm</Width>
+              </TableColumn>
+            </TableColumns>
+            <Height>1.76984cm</Height>
+            <Footer>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox36">
+                          <rd:DefaultName>textbox36</rd:DefaultName>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox33">
+                          <rd:DefaultName>textbox33</rd:DefaultName>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox34">
+                          <rd:DefaultName>textbox34</rd:DefaultName>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox35">
+                          <rd:DefaultName>textbox35</rd:DefaultName>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.5cm</Height>
+                </TableRow>
+              </TableRows>
+            </Footer>
+            <Left>0.25cm</Left>
+          </Table>
+          <Textbox Name="fileCaseAreaText">
+            <rd:DefaultName>fileCaseAreaText</rd:DefaultName>
+            <Top>4.5cm</Top>
+            <Width>13.75cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>34</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!fileCaseAreaText.Value, "DataSet1_testRpt2")</Value>
+          </Textbox>
+          <Textbox Name="textbox8">
+            <Top>4.5cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>33</ZIndex>
+            <Left>16.05cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>مرجع قضایی :</Value>
+          </Textbox>
+          <Textbox Name="textbox12">
+            <Top>6cm</Top>
+            <Width>3cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>32</ZIndex>
+            <Left>16cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>مشخصات طرفین</Value>
+          </Textbox>
+          <Line Name="line3">
+            <Top>5.75cm</Top>
+            <Width>19.2cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>31</ZIndex>
+            <Left>0.1cm</Left>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="textbox2">
+            <Top>1.5cm</Top>
+            <Width>4.5cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>30</ZIndex>
+            <Left>13.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>شماره پرونده در سیستم : </Value>
+          </Textbox>
+          <Textbox Name="textbox20">
+            <Top>3.5cm</Top>
+            <Width>0.25cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>29</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>-</Value>
+          </Textbox>
+          <Textbox Name="textbox21">
+            <Top>3.5cm</Top>
+            <Width>0.25cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>28</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>-</Value>
+          </Textbox>
+          <Textbox Name="textbox22">
+            <Top>3.5cm</Top>
+            <Width>3cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>27</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!fileCaseTypeText.Value, "DataSet1_testRpt2")</Value>
+          </Textbox>
+          <Textbox Name="textbox23">
+            <Top>3.5cm</Top>
+            <Width>2.78968cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>26</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!fileCaseCatText.Value, "DataSet1_testRpt2")</Value>
+          </Textbox>
+          <Textbox Name="textbox24">
+            <Top>3.5cm</Top>
+            <Width>3.03968cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>25</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!fileCaseComplainantText.Value, "DataSet1_testRpt2")</Value>
+          </Textbox>
+          <Textbox Name="textbox25">
+            <Top>3.5cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>24</ZIndex>
+            <Left>15.88cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>نوع پرونده :</Value>
+          </Textbox>
+          <Textbox Name="textbox17">
+            <rd:DefaultName>textbox17</rd:DefaultName>
+            <Top>2.5cm</Top>
+            <Width>0.25cm</Width>
+            <Style>
+              <FontFamily>B Homa</FontFamily>
+              <FontSize>9pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>23</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>/</Value>
+          </Textbox>
+          <Textbox Name="fileCaseOpenDate">
+            <rd:DefaultName>fileCaseOpenDate</rd:DefaultName>
+            <Top>0.5cm</Top>
+            <Width>2.53968cm</Width>
+            <Style>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>12pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>22</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=(First((Fields!fileCaseOpenDate.Value.ToString().Substring(0,4)), "DataSet1_testRpt2") &amp;"/" &amp; First((Fields!fileCaseOpenDate.Value.ToString().Substring(4,2)), "DataSet1_testRpt2"))&amp; "/" &amp; First((Fields!fileCaseOpenDate.Value.ToString().Substring(6,2)), "DataSet1_testRpt2")</Value>
+          </Textbox>
+          <Textbox Name="fileCaseNumberInBranch">
+            <rd:DefaultName>fileCaseNumberInBranch</rd:DefaultName>
+            <Top>2.5cm</Top>
+            <Width>3.25cm</Width>
+            <Style>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>12pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>21</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!fileCaseNumberInBranch.Value, "DataSet1_testRpt2")</Value>
+          </Textbox>
+          <Textbox Name="fileCaseNumberInCourt">
+            <rd:DefaultName>fileCaseNumberInCourt</rd:DefaultName>
+            <Top>2.5cm</Top>
+            <Width>5.75cm</Width>
+            <Style>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>12pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>20</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!fileCaseNumberInCourt.Value, "DataSet1_testRpt2")</Value>
+          </Textbox>
+          <Textbox Name="fileCaseNumberInSystem">
+            <rd:DefaultName>fileCaseNumberInSystem</rd:DefaultName>
+            <Top>1.5cm</Top>
+            <Width>11.25cm</Width>
+            <Style>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>12pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>19</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!fileCaseNumberInSystem.Value, "DataSet1_testRpt2")</Value>
+          </Textbox>
+          <Textbox Name="textbox4">
+            <Top>2.5cm</Top>
+            <Width>5.25cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>18</ZIndex>
+            <Left>13.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>شماره پرونده در مرجع قضایی :</Value>
+          </Textbox>
+          <Textbox Name="textbox18">
+            <Top>7cm</Top>
+            <Width>14.5cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>17</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Parameters!pMovakel.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox9">
+            <Top>7cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>16</ZIndex>
+            <Left>16.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>طرف اول :</Value>
+          </Textbox>
+          <Textbox Name="textbox11">
+            <Top>0.5cm</Top>
+            <Width>3.5cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>15</ZIndex>
+            <Left>15.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>تاریخ تشکیل پرونده :</Value>
+          </Textbox>
+          <Textbox Name="textbox19">
+            <Top>8cm</Top>
+            <Width>14cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>14</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Parameters!pDavi.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox3">
+            <Top>9cm</Top>
+            <Width>13.75cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>13</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Parameters!pVakil.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox5">
+            <Top>8cm</Top>
+            <Width>2.75cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>12</ZIndex>
+            <Left>16cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>طرف دوم :</Value>
+          </Textbox>
+          <Textbox Name="textbox6">
+            <Top>9cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>11</ZIndex>
+            <Left>16cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>وکیل :</Value>
+          </Textbox>
+          <Textbox Name="textbox26">
+            <Top>10cm</Top>
+            <Width>13.25cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Parameters!pKarshenas.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox7">
+            <Top>10cm</Top>
+            <Width>3cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>9</ZIndex>
+            <Left>15.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>کارشناس :</Value>
+          </Textbox>
+          <Textbox Name="fileCaseCloseDateText">
+            <rd:DefaultName>fileCaseCloseDateText</rd:DefaultName>
+            <Top>0.5cm</Top>
+            <Width>2.53968cm</Width>
+            <Style>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>12pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!fileCaseCloseDateText.Value, "DataSet1_testRpt2")</Value>
+          </Textbox>
+          <Textbox Name="StatusText">
+            <rd:DefaultName>StatusText</rd:DefaultName>
+            <Top>0.5cm</Top>
+            <Width>1.53968cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!StatusText.Value, "DataSet1_testRpt2")</Value>
+          </Textbox>
+          <Textbox Name="filecaseResultDetailText">
+            <rd:DefaultName>filecaseResultDetailText</rd:DefaultName>
+            <Top>0.5cm</Top>
+            <Width>1.25cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!filecaseResultDetailText.Value, "DataSet1_testRpt2")</Value>
+          </Textbox>
+          <Textbox Name="textbox13">
+            <Top>11.5cm</Top>
+            <Width>1.92187cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <Left>17cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>موضوع :</Value>
+          </Textbox>
+          <Textbox Name="textbox15">
+            <Top>0.5cm</Top>
+            <Width>1.7cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <Left>11cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>وضعیت :</Value>
+          </Textbox>
+          <Textbox Name="textbox16">
+            <Top>0.5cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <Left>3.8cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>تاریخ مختومه :</Value>
+          </Textbox>
+          <Textbox Name="textbox14">
+            <Top>13.5cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <Left>16.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>شرح دعوی :</Value>
+          </Textbox>
+          <Textbox Name="fileCaseDescription">
+            <rd:DefaultName>fileCaseDescription</rd:DefaultName>
+            <Top>14.25cm</Top>
+            <Width>16.78968cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2cm</Left>
+            <Height>1.5cm</Height>
+            <Value>=First(Fields!fileCaseDescription.Value,"DataSet1_testRpt2")</Value>
+          </Textbox>
+          <Textbox Name="textbox10">
+            <Top>16.25cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+            </Style>
+            <Left>16.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>اقدامات :</Value>
+          </Textbox>
+        </ReportItems>
+        <Top>2.25cm</Top>
+        <Width>19.43cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Double</Default>
+          </BorderStyle>
+          <BorderWidth>
+            <Default>4pt</Default>
+          </BorderWidth>
+        </Style>
+        <Height>26.75cm</Height>
+      </Rectangle>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>0.75cm</Top>
+        <Width>5.25cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <BorderWidth>
+            <Default>2pt</Default>
+          </BorderWidth>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>14pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>7.875cm</Left>
+        <Height>1cm</Height>
+        <Value>مشخصات پرونده</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>29.7cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <PageHeight>29.7cm</PageHeight>
+</Report>
